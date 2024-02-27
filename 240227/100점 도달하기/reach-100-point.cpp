@@ -5,10 +5,11 @@ int main() {
     int n;
     cin>> n;
     for (int i=n;i<=100;i++){
-        if(60<=n<70) cout<<"D ";
-        else if (70<=n<80) cout<<"C ";
-        else if (80<=n<90) cout<<"B ";
-        else if (n>=90) cout<<"A ";
+        if(i>=90) cout<<"A"<<" ";
+        else if(i>=80) cout<<"B"<<" ";
+        else if(i>=70) cout<<"C"<<" ";
+        else if (i>=60) cout<<"D"<<" ";
+        else cout<<"F"<<" ";
     }
     return 0;
 }
