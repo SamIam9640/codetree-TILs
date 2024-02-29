@@ -1,19 +1,29 @@
-#include <bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
 
 int main() {
-    int b,sum_val=0,cnt=0;
-double avg_val;
-    for(int i=1;i<=10;i++){
-        cin>>b;
-        if(b>=0&&b<=200)
-        sum_val +=b;
-        cnt++;
-    }
-    avg_val =(double)sum_val/cnt;
+    // 변수 선언 및 입력
+    int num;
+    int sum = 0, cnt = 0;
+    double avg;
 
-    cout<<fixed;
+    // 입력을 받으며 0이상 200이하의 정수들을 선별합니다.
+    for(int i = 1; i <= 10; i++) {
+        cin >> num;
+        if(num >= 0 && num <= 200) {
+            sum += num;
+            cnt++;
+        }
+    }
+
+    // 0이상 200이하의 정수들의 평균을 구합니다.
+    avg = (double)sum / cnt;
+
+    // 출력
+    cout << fixed;
     cout.precision(1);
-    cout<<sum_val<<" "<<avg_val;
+    cout << sum << " " << avg;
+
     return 0;
 }
