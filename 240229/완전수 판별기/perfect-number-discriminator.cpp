@@ -2,19 +2,18 @@
 using namespace std;
 
 int main() {
-    int sum_val=0,n,i;
+    int n,sum_val=0;
+
     cin>>n;
+
     for(int i=1;i<n;i++){
         if(n%i==0){
-            sum_val+=i;
+            sum_val +=i;
         }
- }
-        if(sum_val==n){
-            cout<<" P ";
-        }
-        else if(sum_val!=n){
-            cout<<" N ";
-        }
+    }
+    if(sum_val==n){
+        cout<<"P";
+    }
+    else { cout<<"N";}
     return 0;
-
 }
