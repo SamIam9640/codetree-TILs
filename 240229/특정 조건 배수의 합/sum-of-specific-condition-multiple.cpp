@@ -11,6 +11,11 @@ int main() {
             sum_val +=i;
         }
     }
+    for(int i=b;i<=a;i++){
+        if(i%5==0){
+            sum_val +=i;
+        }
+    }
     cout<<sum_val;
     return 0;
 }
