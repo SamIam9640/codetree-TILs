@@ -7,16 +7,16 @@ int main() {
     cin>>n;
 
     bool satisfied=true;
-    for(int i=2;i<=n;i++){
+    for(int i=2;i<n;i++){
         if(n%i==0){
             satisfied=false;
         }
     }
     if (satisfied==true){
-        cout<<"C";
+        cout<<"P";
     }
     else {
-        cout<<"P";
+        cout<<"C";
         
     }
     return 0;
