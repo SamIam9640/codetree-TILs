@@ -12,7 +12,7 @@ int main() {
         if(n%2==0)
         n=3*n+1;
         else if(n%2!=0)
-        n=2*n+1;
+        n=2*n+2;
         cnt++;
     }
     cout<<cnt;
