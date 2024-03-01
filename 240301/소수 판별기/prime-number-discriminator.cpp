@@ -13,10 +13,10 @@ int main() {
         }
     }
     if (satisfied==true){
-        cout<<"P";
+        cout<<"C";
     }
     else {
-        cout<<"C";
+        cout<<"P";
         
     }
     return 0;
