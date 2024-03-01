@@ -1,24 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main (){
+int main() {
     int n;
-    int cnt=0;
+    int cnt = 0;
+    cin >> n;
 
-    while(true){
-        if(n>=1000){
-             cout<<cnt;
+    while (true) {
+        if (n % 2 == 0) {
+            n = 3 * n + 1;
+        } else {
+            n = 2 * n + 2;
+        }
+        cnt++;
+
+        if (n >= 1000) {
+            cout << cnt;
             break;
         }
-        if(n%2==0){
-            n=3*n+1;
-        }
-        else if(n%2!=0){
-            n=2*n+2;
-            cnt++;
-       
-        }
-        
     }
+
     return 0;
 }
