@@ -8,8 +8,8 @@ int main() {
     for(int i=1;i<10;i++){
         for(int j=b;j>=a;j--){
             if(j%2==0){
-                cout<<j<<" * "<<i<<" = "<<i*j;
-                if(j!=a) cout<<" / ";
+            cout<<j<<" * "<<i<<" = "<<j*i;
+            if(j!=a)cout<<" / ";
             }
         }
         cout<<"\n";
