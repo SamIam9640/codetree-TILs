@@ -2,14 +2,17 @@
 using namespace std;
 
 int main() {
-   int i=4;
+    int a,b;
+    cin>>a>>b;
 
-   for(int j=1;j<=9;j++){
-    cout<<i<<" * "<<j<<" = "<<i*j;
-    if(i%2==0) j=i-2;
-    cout<<"\n";
-   }
-
-
-return 0;
+    for(int i=1;i<10;i++){
+        for(int j=b;j>=a;j--){
+            if(j%2==0){
+                cout<<j<<" * "<<i<<" = "<<i*j;
+                if(j!=a) cout<<" / ";
+            }
+        }
+        cout<<"\n";
+    }
+    return 0;
 }
