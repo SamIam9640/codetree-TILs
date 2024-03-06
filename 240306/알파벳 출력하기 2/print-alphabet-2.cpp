@@ -11,10 +11,10 @@ for(int i=0;i<n;i++){
         cout<<"  ";
     }
     for(int j=0;j<n-i;j++){
+        if(x>'Z') x='A';
         cout<<x<<" ";
         x++;
     }
-    if(x>'Z') cout<<"A";
  cout<<"\n";
 }
 return 0;
