@@ -10,7 +10,7 @@ int main() {
             if((i+j)%4==0){
                 cout<<"("<<i<<", "<<j<<") "<<"\n";
             }
-            else cout<<"("<<i<<", "<<j<<")";
+            else cout<<"("<<i<<", "<<j<<") ";
         }
     }
     return 0;
