@@ -1,33 +1,21 @@
-#include <iostream>
-
-int calculateStepsToReachOne(int n) {
-    int steps = 0;
-
-    while (n != 1) {
-        if (n % 2 == 0) {
-            // n이 짝수인 경우
-            n /= 2;
-        } else {
-            // n이 홀수인 경우
-            n = 3 * n + 1;
-        }
-        steps++;
-    }
-
-    return steps;
-}
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
-    int m;
-    std::cin >> m;
+    int m,n;
+    cin>>m;
+    int cnt=0;
+          cin>>n;
 
-    for (int i = 0; i < m; ++i) {
-        int n;
-        std::cin >> n;
+    for(int i=0;i<m;i++){
+        
 
-        int result = calculateStepsToReachOne(n);
-        std::cout<< result << "\n";
+          while(n!= 1){
+            if(n%2==0){ n/=2;}
+            else n=n*3+1;
+            cnt++;
+          }
+        cout<<cnt<<"\n";
     }
-
-    return 0;
+return 0;
 }
