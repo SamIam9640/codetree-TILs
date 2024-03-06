@@ -14,7 +14,7 @@ for(int i=0;i<n;i++){
         cout<<x<<" ";
         x++;
     }
-    if(x>'Z') cout<<x;
+    if(x>'Z') cout<<'A';
  cout<<"\n";
 }
 return 0;
