@@ -5,15 +5,19 @@ int main() {
     int n;
     cin>>n;
     char x='A';
-    for(int j=0;j<n;j++){
-        for(int i=0;i<j+1;i++){
-            cout<<x<<" ";
-            x++;
-        }
-        for(int i=0;i<j;i++){
-            cout<<"  ";
-        }
-        cout<<"\n";
+
+for(int i=0;i<n;i++){
+    for(int j=0;j<i;j++){
+        cout<<"  ";
     }
-    return 0;
+    for(int j=0;j<n-i;j++){
+        cout<<x<<" ";
+        x++;
+    }
+    if(x>'Z') cout<<x;
+  cout<<"\n";
+}
+return 0;
+
+
 }
