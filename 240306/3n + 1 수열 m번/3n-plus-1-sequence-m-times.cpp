@@ -2,19 +2,23 @@
 using namespace std;
 
 int main() {
-    int m,n;
+    int m;
     cin>>m;
 
     for(int i=0;i<m;i++){
+        int m;
+        cin>>m;
         int cnt=0;
-          cin>>n;
 
-          while(n!= 1){
-            if(n%2==0){ n/=2;}
-            else n=n*3+1;
-            cnt++;
-          }
+        while(m!=1){
+            if(m%2==0){
+                m/=2;
+                cnt++;
+            }
+            else {m=3*m+1;
+            cnt++;}
+        }
         cout<<cnt<<"\n";
     }
-return 0;
+    return 0;
 }
