@@ -2,15 +2,19 @@
 using namespace std;
 
 int main() {
-    int a,b;
-    cin>>a>>b;
-    for(int i=0;i<3;i++){
-    int sum=0;
+    int n;
+    cin>>n;
 
-    for(int i=a;i<=b;i++){
-        sum+=i;
-    }
-    cout<<sum;
+    for(int i=0;i<3;i++){
+    int a,b;
+        int prod=1;
+    cin>>a>>b;
+
+    
+        for(int j=a;j<=b;j++){
+            prod*=j;
+        }
+        cout<<prod<<"\n";
     }
     return 0;
 }
