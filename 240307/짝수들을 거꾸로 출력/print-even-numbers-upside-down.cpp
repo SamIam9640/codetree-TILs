@@ -1,26 +1,18 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
 
-int main() {
+int main(){
     int n;
+    cin>>n;
 
-    // 원소의 개수 입력
-    std::cin >> n;
+    int arr[100];
 
-    // 원소를 저장할 벡터 생성
-    std::vector<int> elements(n);
-
-    // 원소 입력
-    for (int i = 0; i < n; ++i) {
-        std::cin >> elements[i];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
     }
 
-    // 짝수를 반대 순서로 출력
-    for (int i = n - 1; i >= 0; --i) {
-        if (elements[i] % 2 == 0) {
-            std::cout << elements[i] << " ";
-        }
+    for(int i=n-1;i>=0;i--){
+        if(arr[i]%2==0) cout<<arr[i]<<" ";
     }
-
     return 0;
 }
