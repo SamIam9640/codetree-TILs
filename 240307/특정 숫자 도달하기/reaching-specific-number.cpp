@@ -1,28 +1,22 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+
 int main() {
     int sum=0;
-    float iphone=0;
-    int a[10];
-    for(int i =0; i<10;i++)
-    {
-        cin >>a[i];
-        if (a[i]<250)
-        {
-            sum+=a[i];
-            iphone +=1;
-        }
-        else
-        { 
-        break;
-        }
-    }    
-    
-    cout.precision(1);
-    cout<<fixed;
+    int arr[10];
+    float cnt=0;
 
-    
-    cout <<sum<<' '<<sum/iphone;
-       
+for(int i=0;i<10;i++){
+    cin>>arr[i];
+    if(arr[i]<250){
+    sum+=arr[i];
+    cnt+=1;
+    }
+    else break;
+}
+cout.precision(1);
+cout<<fixed;
+
+    cout<<sum<<" "<<sum/cnt;
     return 0;
 }
