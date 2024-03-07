@@ -14,7 +14,7 @@ int main() {
         sum+=arr[i];
         cnt++;
     }
-    cout.precision(1);
+    cout.precision(2);
     cout.fixed;
     cout<<sum/cnt<<"\n";
     if(sum/cnt>=4.0) cout<< "Perfect";
