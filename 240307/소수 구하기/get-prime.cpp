@@ -7,12 +7,12 @@ int main() {
 
     for(int i=1;i<=n;i++){
         if(i==1) continue;
-        bool isprime =true;
+        bool satisfied =true;
 
         for(int j=2;j<i;j++){
-            if(i%j==0) isprime = false;
+            if(i%j==0) satisfied = false;
         }
-            if(isprime) cout<<i<<" ";
+            if(satisfied) cout<<i<<" ";
         
     }
     return 0;
