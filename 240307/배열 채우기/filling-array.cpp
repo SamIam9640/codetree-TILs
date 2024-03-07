@@ -10,9 +10,9 @@ int main() {
         if(arr[i]==0) break;
         cnt++;
     }
-    
-for(int i=cnt-1;i>=0;i--){
-    cout<<arr[i]<<" ";
-}
+
+    for(int i= cnt-1;i>=0;i--){
+        cout<<arr[i]<<" ";
+    }
     return 0;
 }
