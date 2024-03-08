@@ -1,30 +1,21 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int a, b, nam;
-    
-    cin >> a >> b;
+    int a,b;
+    cin>>a>>b;
 
-    int cnt[b] = {};
+    int cnt_arr[10]={};
+    int ans=0;
 
-    // for(int i = 0; i < b; i++)
-    //     cnt[i] = 0;
-
-    while(true){
-        nam = a % b;
-        cnt[nam] += 1;
-        a = a / b;
-        if(a <= 1)
-            break;
+    while(a>1){
+        cnt_arr[a%b]++;
+        a/=b;
     }
     
-    int sum = 0;
-    for(int i = 0; i < b; i++){
-        sum += cnt[i] * cnt[i];
+    for(int i=0;i<b;i++){
+        ans +=cnt_arr[i]*cnt_arr[i];
     }
-    cout << sum;
 
-    return 0;
+cout<<ans;
 }
