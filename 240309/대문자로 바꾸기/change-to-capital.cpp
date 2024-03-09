@@ -1,10 +1,3 @@
-//2차원 배열 구현
-
-//2차원 배열 입력 받기
-
-//조건
-
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -23,5 +16,6 @@ int main() {
         }
         cout<<"\n";
     }
+    
     return 0;
 }
