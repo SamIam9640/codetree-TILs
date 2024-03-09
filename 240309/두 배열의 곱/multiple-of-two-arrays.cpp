@@ -1,26 +1,34 @@
-#include <bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
 
 int main() {
-    int arr_2d1[100][100]={};
-    int arr_2d2[100][100]={};
-    
+    // 2차원 배열을 구현합니다.
+	int arr_1[3][3];
+	int arr_2[3][3];
+	int arr_3[3][3];
+	
+	// 첫 번째 배열의 입력을 받습니다.
+	for(int i = 0; i < 3; i++)
+		for(int j = 0; j < 3; j++)
+			cin >> arr_1[i][j];
+	
+	// 두 번째 배열의 입력을 받습니다.
+	for(int i = 0; i < 3; i++)
+		for(int j = 0; j < 3; j++)
+			cin >> arr_2[i][j];
+	
+	// 두 배열의 곱을 새로운 배열에 담습니다.
+	for(int i = 0; i < 3; i++)
+		for(int j = 0; j < 3; j++)
+			arr_3[i][j] = arr_1[i][j] * arr_2[i][j];
+	
+	// 새로운 배열을 출력합니다.
+	for(int i = 0; i < 3; i++) {
+		for(int j = 0; j < 3; j++)
+			cout << arr_3[i][j] << " ";
+		cout << endl;
+	}
 
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            cin>>arr_2d1[100][100];
-        }
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                cin>>arr_2d2[100][100];
-            }
-        }
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                arr_2d[i][j]=arr_2d1[i][j]*arr_2d2[i][j];
-            }
-        }
-        cout<<arr_2d[i][j]<<"\n";
-    }
     return 0;
 }
