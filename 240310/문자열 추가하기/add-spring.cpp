@@ -4,8 +4,10 @@ using namespace std;
 int main() {
     string str;
     cin>>str;
-    string a="Hello";
-    cout<<str+a;
+    string hel="Hello";
+   
+    str+=hel;
+    cout<<str;
 
 
     return 0;
