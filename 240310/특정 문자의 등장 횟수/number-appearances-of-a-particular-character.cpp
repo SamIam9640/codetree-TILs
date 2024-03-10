@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
     string str;
+
     cin>>str;
 
     int len=str.length();
@@ -15,9 +16,6 @@ int main() {
         if(str[i]=='e'&&str[i+1]=='b')
         cnt2++;
     }
-
     cout<<cnt1<<" "<<cnt2;
     return 0;
-
-
 }
