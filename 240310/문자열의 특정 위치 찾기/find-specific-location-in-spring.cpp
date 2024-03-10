@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
+    string str;
+    cin>>str;
     char n;
     cin>>n;
 
-    string str;
-    cin>>str;
     int start_idx=-1;
 
     for(int i=0;str[i]!='\0';i++){
