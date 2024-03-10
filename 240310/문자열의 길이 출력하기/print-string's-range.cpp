@@ -8,8 +8,9 @@ int main(){
     cin>>str1;
     cin>>str2;
 
-    int sum=0;
-    sum=str1.length()+str2.length();
-    cout<<sum;
+int len1=str1.length();
+int len2=str2.length();
+
+cout<<len1+len2;
     return 0;
 }
