@@ -8,7 +8,7 @@ int main() {
         cin>>str[i];
     }
 
-    for(int i=3;i>=0;i++){
+    for(int i=3;i>=0;i--){
         cout<<str[i]<<"\n";
     }
     return 0;
