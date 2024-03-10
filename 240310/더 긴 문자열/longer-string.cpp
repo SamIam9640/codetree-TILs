@@ -11,6 +11,8 @@ int main() {
     int len2=str2.length();
 
     if(len1>len2) cout<<str1<<" "<<len1;
-    else cout<<str2<<" "<<len2;
+        else if (len2>len1) cout<<str2<<" "<<len2;
+        else cout<<"same";
+    
     return 0;
 }
