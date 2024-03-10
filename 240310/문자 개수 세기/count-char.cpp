@@ -4,16 +4,15 @@ using namespace std;
 int main() {
     string str;
     getline(cin,str);
+    char a;
+    cin>>a;
 
-    char n;
-    cin>>n;
-    int len=str.length();
     int cnt=0;
 
-    for(int i=0;i<len;i++){
-    if(str[i]==n) cnt++;
-    }
+    int len=str.length();
 
+    for(int i=0;i<len;i++){
+        if(str[i]==a) cnt++;
+    }
     cout<<cnt;
-    return 0;
 }
