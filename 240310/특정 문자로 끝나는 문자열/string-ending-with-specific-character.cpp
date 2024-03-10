@@ -13,8 +13,9 @@ int main() {
 
     for(int i=0;i<10;i++){
         int len=str[i].length();
-        if(str[i][len-1]==c) cout<<str[i]<<"\n";
+        if(str[i][len-1]==c) {cout<<str[i]<<"\n";
         cnt++;
+    }
     }
     if(cnt==0) cout<<"None";
     return 0;
