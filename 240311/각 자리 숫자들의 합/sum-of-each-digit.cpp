@@ -2,17 +2,17 @@
 using namespace std;
 
 int main() {
-    int a;
-    cin>>a;
-    string a_str;
-    int cnt=0;
-
-    a_str=to_string(a);
-
-    for(int i=0;i<a_str.length();i++){
-        cnt+=a_str[i]-'0';
+    int n;
+    cin>>n;
+    string n_str;
+    int sum=0;
+    //입력
+    n_str=to_string(n);
+    //정수를 문자열로 변환
+    for(int i=0;i<n_str.length();i++){
+        sum+=n_str[i]-'0';
     }
-
-    cout<<cnt;
+ 
+cout<<sum;
     return 0;
 }
