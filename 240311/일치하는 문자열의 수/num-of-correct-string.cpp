@@ -2,23 +2,16 @@
 using namespace std;
 
 int main() {
-    int n;
-    string str1;
-    string str2;
-    cin>>n>>str1;
 
+    int n;
+    string s1,s2;
+    cin>>n>>s1;
     int cnt=0;
 
     for(int i=0;i<n;i++){
-        cin>>str2;
-        if(str2==str1){
-            cnt++;
-        }
-
+        cin>>s2;
+        if(s1==s2) cnt++;
     }
     cout<<cnt;
-
-
-return 0;
-
+    return 0;
 }
