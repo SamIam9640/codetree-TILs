@@ -7,6 +7,7 @@ int main() {
     cin>>c;
 
     if(c=='a') {c='z';}
-    else cout<<(char)(c-1);
+    else c=(char)(c-1);
+    cout<<c<<"\n";
     return 0;
 }
