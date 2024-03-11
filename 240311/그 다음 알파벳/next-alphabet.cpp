@@ -5,7 +5,8 @@ int main() {
     char c;
     cin>>c;
 
-    if(c=='z') cout<<'a';
-    else cout<<(char)(c+1);
+    if(c=='z') c='a';
+    else c=(char)(c+1);
+    cout<<c<<"\n";
     return 0;
 }
