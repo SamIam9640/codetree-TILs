@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string str;
+    cin>>str;
+    int sum=0;
+
+    int len=str.length();
+    for(int i=0;i<len;i++){
+        if(str[i]>='0'&&str[i]<='9')
+        {
+            sum+=(str[i]-'0');
+        }
+    }
+    cout<<sum;
+    return 0;
+}
