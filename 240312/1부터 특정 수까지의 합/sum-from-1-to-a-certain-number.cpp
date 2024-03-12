@@ -1,22 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int Dev(int a){
+int Dev(int n){
     int sum=0;
-    for(int i=1;i<=a;i++){
+    for(int i=1;i<=n;i++){
         sum+=i;
-        }
-        return sum/10;
-    
+    }
+    return sum/10;
 }
-int main() {
-    int num1;
-    cin>>num1;
 
-    cout<<Dev(num1);
+int main(){
+    int num;
+    cin>>num;
 
-
+    cout<<Dev(num);
     return 0;
-
-
 }
