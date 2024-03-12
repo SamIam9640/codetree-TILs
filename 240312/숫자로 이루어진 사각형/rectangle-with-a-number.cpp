@@ -2,25 +2,22 @@
 using namespace std;
 
 
-
-void PrintSq(int n){
-    int cnt=1;
-    for(int i=0;i<n;i++){
+    void PrintSq(int n){
+        int cnt=1;
         for(int i=0;i<n;i++){
-            if(cnt==10) {cnt=1;}
-            cout<<cnt<<" ";
-            cnt++;
+            for(int j=0;j<n;j++){
+                cout<<cnt<<" ";
+                cnt++;
+                if(cnt==10) cnt=1;
+            }
+            cout<<"\n";
         }
-        cout<<"\n";
     }
-}
+
 
 int main() {
-    
-    int num;
-    cin>>num;
-   
-   
- PrintSq(num);
-return 0;
+    int n;
+    cin>>n;
+    PrintSq( n);
+    return 0;
 }
