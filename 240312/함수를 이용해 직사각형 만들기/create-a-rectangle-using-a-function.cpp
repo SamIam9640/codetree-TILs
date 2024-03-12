@@ -10,10 +10,9 @@ void PrintRect(int n,int m){
     }
 }
 
-int main() {
+int main(){
     int row_num,col_num;
     cin>>row_num>>col_num;
-
     PrintRect(row_num,col_num);
-    return 0;
+return 0;
 }
