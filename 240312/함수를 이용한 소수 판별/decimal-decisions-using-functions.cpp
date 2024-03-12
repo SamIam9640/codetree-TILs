@@ -1,28 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 bool IsPrime(int n){
-    if(n==1)
-    return false;
-    
+    if(n==1) {return false;}
     for(int i=2;i<n;i++){
-        if(n%i==0)
-        
-        return false;
+        if(n%i==0) {return false;}
     }
     return true;
 }
 
-int main(){
+int main() {
     int a,b;
     cin>>a>>b;
     int sum=0;
+
     for(int i=a;i<=b;i++){
-    if(IsPrime(i))
-    sum+=i;}
+        if(IsPrime(i))
+        sum+=i;
+    }
     cout<<sum;
-    
     return 0;
 }
