@@ -10,9 +10,9 @@ int Dev(int n){
 }
 
 int main(){
-    int num;
-    cin>>num;
+    int a;
+    cin>>a;
 
-    cout<<Dev(num);
+    cout<<Dev(a);
     return 0;
 }
