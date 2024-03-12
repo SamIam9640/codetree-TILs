@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+bool Contains369(int n){
+    while(n>0){
+        if(n%10==3||n%10==6||n%10==9)
+        return true;
+        n/=10;
+    }
+    return false;
+}
+
+bool IsMagicNumber(int n){
+    return n%3==0||Contains369(n);
+}
+
+
+int main(){
+    int a,b;
+    cin>>a>>b;
+    int cnt=0;
+    for(int i=a;i<=b;i++){
+        if(IsMagicNumber(i))
+        cnt++;
+    }
+    cout<<cnt;
+    return 0;
+}
