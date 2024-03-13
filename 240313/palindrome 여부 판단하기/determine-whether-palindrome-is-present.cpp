@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string str;
 
-bool Palindrome(string s){
+
+bool Palindrome(string &s){
     for(int i=0;i<(int)s.size();i++){
         if(s[i]!=s[(int)s.size()-i-1])
         return false;
@@ -13,6 +13,7 @@ bool Palindrome(string s){
 }
 
 int main(){
+    string str;
     cin>>str;
 
     if(Palindrome(str))
