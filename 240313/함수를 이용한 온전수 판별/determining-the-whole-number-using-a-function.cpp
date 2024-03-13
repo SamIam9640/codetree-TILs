@@ -9,6 +9,7 @@ bool isOn(int n){
     if(n%3==0&&n%9!=0)
     return false;
     return true;
+
 }
 
 int main(){
