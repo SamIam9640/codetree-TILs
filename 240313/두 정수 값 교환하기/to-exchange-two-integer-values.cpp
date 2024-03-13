@@ -9,7 +9,8 @@ using namespace std;
     }
 
 int main(){
-int n=13,m=8;
+int n,m;
+cin>>n>>m;
 swap(n,m);
 return 0;   
 
