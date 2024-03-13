@@ -1,27 +1,27 @@
-#include <bits/stdc++.h>
-#define max_n 50
+#include <iostream>
+
+#define MAX_N 50
 
 using namespace std;
 
 int n;
-int arr[max_n];
-void modify(int *arr){
-    for(int i=0;i<n;i++){
-        if(arr[i]%2==0)
-        arr[i]/2;
-    }
+int arr[MAX_N];
+
+void Modify(int *arr) {
+    for(int i = 0; i < n; i++)
+        if(arr[i] % 2 == 0)
+            arr[i] /= 2;
 }
 
-int main(){
-    cin>>n;
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
+int main() {
+    // 입력:
+    cin >> n;
+    for(int i = 0; i < n; i++)
+        cin >> arr[i];
+    
+    Modify(arr);
 
-    modify(arr);
-
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
     return 0;
 }
