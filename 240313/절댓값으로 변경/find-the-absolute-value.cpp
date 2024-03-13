@@ -11,7 +11,7 @@ void AbsoluteValue(int *arr){
         if(arr[i]<0)
         arr[i]=-arr[i];
     }
-    return ;
+
 }
 
 int main(){
