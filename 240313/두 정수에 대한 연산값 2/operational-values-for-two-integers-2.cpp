@@ -6,7 +6,6 @@ void Hello(int &a,int &b){
     {a*=2;b+=10;};
     if(b>a)
     {a+=10;b*=2;};
-    return ;
 }
 
 int main() {
