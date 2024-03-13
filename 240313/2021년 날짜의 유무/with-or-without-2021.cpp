@@ -1,33 +1,27 @@
-bool 두개
-int main
-
-
-
 #include <bits/stdc++.h>
 using namespace std;
 
-
-bool isExist(int n){
-
-
-    
+int LastDayNumber(int m){
+    if(m==2)
+    return 28;
+    if(m==4||m==6||m==9||m==11)
+    return 30;
+    return 31;
 }
-bool Exists(){
-    for(int i=1;i<=12;i++){
-        for(int j=1;i<=31;j++){
-            if(isExist(i)) return true;
-        }
-    }
+
+bool JudgeDay(int m,int d){
+    if(m<=12&&d<=LastDayNumber(m))
+    return true;
+
     return false;
 }
-
-
 
 int main(){
     int m,d;
     cin>>m>>d;
 
-    if(Exists())
+    if(JudgeDay(m,d))
     cout<<"Yes";
     else cout<<"No";
+    return 0;
 }
