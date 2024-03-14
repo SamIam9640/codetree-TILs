@@ -1,16 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int F(int n){
+int Fibo(int n){
     if(n==1) return 1;
     if(n==2) return 1;
 
-    return F(n-1)+F(n-2);
+    return Fibo(n-1)+Fibo(n-2);
 }
 
-int main(){
+int main() {
     int n;
     cin>>n;
-    cout<<F(n);
+
+    cout<<Fibo(n);
     return 0;
 }
