@@ -9,7 +9,7 @@ bool Substr(int start_idx){
     if(start_idx+m-1>=n)
     return false;
 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<m;i++){
         if(str1[start_idx+i]!=str2[i])
         return false;
     }
