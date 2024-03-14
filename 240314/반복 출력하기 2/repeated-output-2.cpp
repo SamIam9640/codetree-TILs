@@ -11,6 +11,9 @@ void PrintText(int n){
 }
 
 int main(){
-    PrintText(4);
+
+    int n;
+    cin>>n;
+    PrintText(n);
     return 0;
 }
