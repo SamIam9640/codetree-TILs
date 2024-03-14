@@ -2,14 +2,10 @@
 using namespace std;
 
 int Sum(int n){
-    if(n==1)
-    return 1;
-
-    int sum=0;
-    for(int i=0;i<=n;i++){
-        sum+=i;
-    }
-    return sum;
+ if(n==0)
+ return 0;
+ 
+    return Sum(n-1)+n;
 }
 
 int main() {
