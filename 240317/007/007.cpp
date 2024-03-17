@@ -4,7 +4,9 @@ using namespace std;
 
 class Spy{
     public:
-    string secret_code,char meeting_point,int time;
+    string secret_code;
+    char meeting_point;
+    int time;
 
     Spy(string secret_code,char meeting_point,int time){
         this->secret_code=secret_code;
@@ -23,8 +25,8 @@ int main(){
 
     Spy s=Spy(s_code,m_point,time);
 
-    cout<<"secret_code : "<<s.secret_code<<"\n";
-    cout<<"meeting_point : "<<s.meeting_point<<"\n";
+    cout<<"secret code : "<<s.secret_code<<"\n";
+    cout<<"meeting point : "<<s.meeting_point<<"\n";
     cout<<"time : "<<s.time<<"\n";
     return 0;
 }
