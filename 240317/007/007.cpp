@@ -24,6 +24,6 @@ int main(){
 
     cout<<"secret code : "<<s_code<<"\n";
     cout<<"meeting point : "<<m_point<<"\n";
-    cout<<"time : "<<time;
+    cout<<"time : "<<time<<"\n";
     return 0;
 }
