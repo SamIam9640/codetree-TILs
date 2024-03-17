@@ -2,6 +2,8 @@
 using namespace std;
 
 class Bomb{
+    public:
+
     string code;
     char color;
     int num;
@@ -13,15 +15,18 @@ class Bomb{
     }
 };
 
-Bomb bob=Bomb(code,color,num);
-
 int main(){
     string code;
     char color;
     int num;
     cin>>code>>color>>num;
 
+
+Bomb bob=Bomb(code,color,num);
+
     cout<<"code : "<<bob.code<<"\n";
     cout<<"color : "<<bob.color<<"\n";
-    cout<<"second : "<<bob.second<<"\n";
+    cout<<"second : "<<bob.num<<"\n";
+
+return 0;
 }
