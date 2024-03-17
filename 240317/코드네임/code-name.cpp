@@ -1,18 +1,35 @@
-class CodeName{
-    public:
-    char codename;
-    int score;
+#include <bits/stdc++.h>
+#define MAX_N 5
+using namespace std;
 
-    Codename( codename="",int score=0){
-        this->codename=codename;
+class User{
+    public:
+    char code_name;
+    int score;
+    User(char code_name,int score){
+        this->code_name=code_name;
         this->score=score;
     }
+    User(){}
 };
 
-CodeName codename[5];
-for(int i=0;i<5;i++){
-    string codename;
-    int score;
-    cin>>codename>>score;
-    codename[i]=Codename(codename,score);
+User users[MAX_N];
+
+int main(){
+    for(int i=0;i<MAX_N;i++){
+        char code_name;
+        int score;
+        cin>>code_name>>score;
+
+        users[i]=User(code_name,score);
+    }
+
+    int min_idx=0;
+    for(int i= 1;i<MAX_N;i++){
+        if(users[min_idx].score>users[i].score)
+        min_idx=i;
+    }
+
+    cout<<users[min_idx].code_name<<" "<<users[min_idx].score;
+    return 0;
 }
