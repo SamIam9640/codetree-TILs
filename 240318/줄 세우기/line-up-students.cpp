@@ -28,8 +28,8 @@ int main(){
     cin>>n;
 
     for(int i=0;i<n;i++){
-        int height,weight,num;
-        cin>>height>>weight>>num;
+        int height,weight;
+        cin>>height>>weight;
         students[i]=Student(height,weight,i+1);
     }
 
