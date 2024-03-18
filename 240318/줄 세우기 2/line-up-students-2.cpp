@@ -1,46 +1,45 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
+#include <bits/stdc++.h>
+#define MAXN 1000
 using namespace std;
 
-class Student {
-public:
-    int height;
-    int weight;
-    int number;
-
-    Student(int h, int w, int num) : height(h), weight(w), number(num) {}
-
-    // 비교 연산자 오버로딩
-    bool operator<(const Student& other) const {
-        if (height != other.height) // 키가 다르면
-            return height < other.height; // 키가 작은 학생이 먼저 오도록 정렬
-        else // 키가 같다면
-            return weight > other.weight; // 몸무게가 더 큰 학생이 먼저 오도록 정렬
+class Student{
+    public:
+    int height,weight,num;
+    Student(int height,int weight,int num){
+        this->height=height;
+        this->weight=weight;
+        this->num=num;
     }
+    Student (){}
 };
 
-int main() {
-    int N;
-    cin >> N;
+bool cmp(Student a,Student b){
+    if(a.height!=b.height)
+    return a.height<b.height;
+    if(a.weight!=a.weight)
+    return a.weight>b.weight;
+    return a.num<b.num;
+}
 
-    vector<Student> students;
+Student students[MAXN];
 
-    // 학생 정보 입력
-    for (int i = 0; i < N; ++i) {
-        int h, w;
-        cin >> h >> w;
-        students.emplace_back(h, w, i + 1); // 학생 정보를 벡터에 추가
+int main(){
+    int n;
+    cin>>n;
+
+    for(int i=0;i<n;i++){
+        int height,weight,num;
+        cin>>height>>weight;
+        students[i]=Student(height,weight,i+1);
     }
 
-    // 조건에 맞게 학생들을 정렬
-    sort(students.begin(), students.end());
+    sort(students,students+n,cmp);
 
-    // 정렬된 학생들의 정보 출력
-    for (const auto& student : students) {
-        cout << student.height << " " << student.weight << " " << student.number << endl;
-    }
+    for(int i=0;i<n;i++){
+        cout<<students[i].height<<" ";
+        cout<<students[i].weight<<" ";
+        cout<<students[i].num<<"\n"; 
+        }
+        return 0;
 
-    return 0;
 }
