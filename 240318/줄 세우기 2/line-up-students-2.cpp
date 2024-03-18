@@ -18,7 +18,6 @@ bool cmp(Student a,Student b){
     return a.height<b.height;
     if(a.weight!=a.weight)
     return a.weight>b.weight;
-    return a.num<b.num;
 }
 
 Student students[MAXN];
