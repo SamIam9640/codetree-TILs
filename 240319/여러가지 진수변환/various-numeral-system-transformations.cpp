@@ -10,7 +10,7 @@ int main(){
     int cnt=0;
 
     while(true){
-        if(n<4){
+        if(n<b){
         digits[cnt++]=n;
         break;
         }
