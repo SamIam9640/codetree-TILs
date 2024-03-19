@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    digits[20]={};
+    int digits[20]={};
     int cnt=0;
 
 while(true){
