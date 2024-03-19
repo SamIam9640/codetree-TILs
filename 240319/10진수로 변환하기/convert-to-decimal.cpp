@@ -1,23 +1,16 @@
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main(){
     string binary;
-    cin >> binary;
+    cin>>binary;
 
-    int decimal = 0;
-    int power = 0;
 
-    // 이진수를 뒤에서부터 읽어가며 십진수로 변환
-    for (int i = binary.length() - 1; i >= 0; i--) {
-        if (binary[i] == '1') {
-            decimal += pow(2, power);
-        }
-        power++;
-    }
+    int num=0;
 
-    cout<< decimal << endl;
+    for(int i=0;i<(int)binary.size();i++)
+    num=num*2+(binary[i]-'0');
 
+    cout<<num;
     return 0;
 }
