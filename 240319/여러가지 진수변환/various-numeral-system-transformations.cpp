@@ -1,27 +1,26 @@
 #include <bits/stdc++.h>
+#define MAXDIGIT 20
 using namespace std;
 
-int main(){
 
-    int n,b;
+
+int n,b;
+int digits[MAXDIGIT];
+int cnt;
+
+int main(){
     cin>>n>>b;
 
-    int digits[20]={};
-    int cnt=0;
-
     while(true){
-        if(n<b){
+        if(n<b)
         digits[cnt++]=n;
         break;
-        }
-        digits[cnt++]=n%b;
-        n/=b;
+    
+    digits[cnt++]=n%b;
+    n/=b;
+}
+    for(int i=cnt-1;i>=0;i--){
+        cout<<digits[i];
     }
-    for(int i=cnt-1;i>=0;i--)
-    cout<<digits[i];
-
-    
-    
-
-
+        return 0;
 }
