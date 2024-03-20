@@ -1,24 +1,32 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+
 using namespace std;
-#define MAXN 1000
-int main(){
-    int n,t;
-    int arr[MAXN];
 
-    cin>>n>>t;
-    for(int i=0;i<n;i++){
-    cin>>arr[i];}
+int main() {
+    int n, t;
+    cin >> n >> t;
 
-    int ans=0,cnt=0;
+    vector<int> sequence(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> sequence[i];
+    }
 
-    for(int i=0;i<n;i++){
-    if(i>=1&&arr[i]>t)
-    cnt++;
-    else
-    cnt=1;
+    int maxLength = 0;
+    int currentLength = 0;
+    for (int i = 0; i < n; ++i) {
+        if (sequence[i] > t) {
+            currentLength++;
+        } else {
+            maxLength = max(maxLength, currentLength);
+            currentLength = 0;
+        }
+    }
 
-    ans=max(ans,cnt);}
+    // 마지막 부분 수열의 길이를 확인하여 최대 길이 갱신
+    maxLength = max(maxLength, currentLength);
 
-    cout<<ans;
+    cout << maxLength << endl;
+
     return 0;
 }
