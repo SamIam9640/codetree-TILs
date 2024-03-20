@@ -33,13 +33,13 @@ for(int i=0;i<m;i++){
 
 int leader=0,ans=0;
 for(int i=1;i<time_a;i++){
-    if(pos_a[i]>pos_a[i]){
+    if(pos_a[i]>pos_b[i]){
         if(leader==2)
         ans++;
     
     leader=1;
 }
-else if(pos_b[i]<pos_b[i]){
+else if(pos_a[i]<pos_b[i]){
     if(leader==1)
     ans++;
 
