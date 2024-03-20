@@ -15,7 +15,7 @@ cin>>n>>m>>k;
 for(int i=0;i<m;i++)
 cin>>penalized_person[i];
 
-int ans=1;
+int ans=-1;
 for(int i=0;i<m;i++){
     int target=penalized_person[i];
     penalty_num[target]++;
