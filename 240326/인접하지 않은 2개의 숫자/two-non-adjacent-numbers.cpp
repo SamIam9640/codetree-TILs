@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define MAXN 98
+#define MAXN 100
 
 int n;
 int arr[MAXN];
