@@ -18,7 +18,7 @@ int main(){
         if(i==j||j==k||k==i)
         continue;
 
-        bool successed true;
+        bool successed= true;
         for(int q=0;q<n;q++){
             int x=a[q]/100;
             int y=a[q]/10%10;
