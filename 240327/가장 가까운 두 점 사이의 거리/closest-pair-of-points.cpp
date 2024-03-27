@@ -1,28 +1,29 @@
 #include <bits/stdc++.h>
+#define MAX_N 100
+
 using namespace std;
 
-int main() {
-    int n=5;
-    int segments[5][2]={{1,3},{2,4},{5,8},{6,9},{7,10}};
+int n;
+int x[MAX_N],y[MAX_N];
 
-    int ans=100;
+int dist(int i,int j){
+    return (x[i]-x[j])*(x[i]-x[j])+(y[i]-y[j])*(y[i]-y[j]);
+}
+
+int main(){
+    cin>>n;
+
     for(int i=0;i<n;i++)
-    for(int j=i+1;j<n;j++) {
-        int counting[11]={};
-        for(int k=0;k<n;k++){
-            if(k==i||k==j)
-            continue;
+    
+        cin>>x[i]>>y[i];
 
-            int x1=segments[k][0],x2=segments[k][1];
-            for(int l=x1;l<=x2;l++)
-            counting[l]++;
-        }
+        int min_dist=INT_MAX;
+        for(int i=0;i<n;i++)
+        for(int j=i+1;j<n;j++)
+        min_dist=min(min_dist,dist(i,j));
 
-        int max_cnt=0;
-        for(int k=0;k<11;k++)
-        max_cnt=max(max_cnt,counting[k]);
-        ans=min(ans,max_cnt);
-    }
-    cout<<ans;
+        
+    
+    cout<<min_dist;
     return 0;
 }
