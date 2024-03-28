@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define MAX_N 100
-#define MAX_NUM 1000
+
 
 using namespace std;
 
