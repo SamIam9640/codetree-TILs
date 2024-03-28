@@ -5,7 +5,7 @@
 using namespace std;
 
 int n;
-int x1[MAX_NUM],x2[MAX_NUM];
+int x1[MAX_N],x2[MAX_N];
 
 int main(){
     //입력
