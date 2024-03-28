@@ -18,10 +18,10 @@ for(int j=i+1;j<n;j++){
     if(j-i>k)
     break;
 
-    if(num[i]!=num[j])
+    if(arr[i]!=arr[j])
     continue;
 
-    ans=max(ans,num[i]);
+    ans=max(ans,arr[i]);
 }
 cout<<ans;
 
