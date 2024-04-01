@@ -6,6 +6,8 @@ int main(){
     cin>>n;
     vector<int> v;
 
+    for(int i=0;i<n;i++){
+
     v.push_back (10);
     v.push_back (20);
     cout<<v[0]<<"\n";
@@ -18,4 +20,6 @@ int main(){
     cout<<v[0]<<"\n";
     cout<<v.size()<<"\n";
     return 0;
+
+    }
 }
