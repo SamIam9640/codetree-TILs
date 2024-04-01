@@ -1,26 +1,35 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define MAX_N 100
+
 int n;
+int arr[MAX_N];
+
+void BubbleSort() {
+    bool sorted=true;
+
+do {
+    sorted=true;
+    for(int i=0;i<n-1;i++)
+    if(arr[i]>arr[i+1]){
+        int temp=arr[i];
+        arr[i+1]=temp;
+        sorted=false;
+    }
+}
+while(!sorted);
+}
 
 int main(){
     cin>>n;
+    for(int i=0;i<n;i++)
+    cin>>arr[i];
 
-function bubble_sort(qrr[])
-set len=n.size
-set sorted=true
+BubbleSort();
 
-do{
-    sorted=true
-    for(i=0;i<len-1)
-    if(a[i]>a[i+1])
-    set tmp=a[i];
-    a[i]=a[i+1];
-    a[i+1]=tmp
-    sorted=false
+for(int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
 }
-while(sorted==false)
-
-return arr;
-
+return 0;
 }
