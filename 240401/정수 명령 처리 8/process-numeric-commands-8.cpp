@@ -12,9 +12,9 @@ int main() {
     cin>>command;
 
     if(command=="push_back"){
-        int num;
-        cin>>num;
-        l.push_back(num);
+        int v;
+        cin>>v;
+        l.push_back(v);
     }
     else if(command=="push_front"){
         int n;
