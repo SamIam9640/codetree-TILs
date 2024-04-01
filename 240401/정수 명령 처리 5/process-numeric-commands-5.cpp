@@ -21,22 +21,16 @@ int main() {
         } else if (operation == "pop_back") {
             if (!dynamicArray.empty()) {
                 dynamicArray.pop_back();
-            } else {
-                cout << "Array is empty!" << endl;
-            }
+            } 
         } else if (operation == "size") {
-            cout << "Size of dynamic array: " << dynamicArray.size() << endl;
+            cout<< dynamicArray.size() << endl;
         } else if (operation == "get") {
             int k;
             ss >> k;
             if (k >= 1 && k <= dynamicArray.size()) {
-                cout << "Element at index " << k << ": " << dynamicArray[k - 1] << endl;
-            } else {
-                cout << "Invalid index!" << endl;
-            }
-        } else {
-            cout << "Invalid command!" << endl;
-        }
+                cout<< dynamicArray[k - 1] << endl;
+            } 
+        } 
     }
     
     return 0;
