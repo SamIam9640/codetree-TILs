@@ -1,36 +1,38 @@
 #include <bits/stdc++.h>
-#define MAX_N 10000
+
 using namespace std;
 int n;
-int arr[MAX_N];
+stack <int> s;
 
-string command;
+
 
 int main() {
 cin>>n;
-int stack <int> s;
+
 for(int i=0;i<n;i++){
-    cin>>arr[i];
-}
+    string command;
+    cin>>command;
+
 if(command=="push") {
     int j;
     cin>>j;
-    s.push();
+    s.push(j);
 }
 else if(command=="size") {
-    cout<<s.size();
+    cout<<s.size()<<"\n";
 }
 else if(command=="pop") {
-    cout<<s.pop();
+    int v=s.top();
+    s.pop();
+    cout<<v<<"\n";
 }
 else if(command=="empty") {
-    if(!s.empty()) cout<<0;
-    else cout<<1;
+    if(s.empty()) cout<<0<<"\n";
+    else cout<<1<<"\n";
 }
 else {
-    cout<<s.top();
+    cout<<s.top()<<"\n";
 }
-
-cout<<arr[i]<<"\n";
+}
 return 0;
 }
