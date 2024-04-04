@@ -27,8 +27,8 @@ else if(command=="pop") {
     cout<<v<<"\n";
 }
 else if(command=="empty") {
-    if(s.empty()) cout<<0<<"\n";
-    else cout<<1<<"\n";
+    if(s.empty()) cout<<1<<"\n";
+    else cout<<0<<"\n";
 }
 else {
     cout<<s.top()<<"\n";
