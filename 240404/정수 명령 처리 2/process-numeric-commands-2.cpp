@@ -10,9 +10,9 @@ for(int i=0;i<n;i++){
     cin>>command;
 
     if(command=="push") {
-        int x;
-        cin>>x;
-        q.push(x);
+        int n;
+        cin>>n;
+        q.push(n);
     }
     else if(command=="pop") {
         int v=q.front();
