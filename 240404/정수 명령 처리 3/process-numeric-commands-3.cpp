@@ -17,9 +17,9 @@ int main() {
             d.push_front(t);
         }
         else if(command=="push_back") {
-            int w;
-            cin>>w;
-            d.push_back(w);
+            int n;
+            cin>>n;
+            d.push_back(n);
         }
         else if(command=="pop_front") {
             int v=d.front();
