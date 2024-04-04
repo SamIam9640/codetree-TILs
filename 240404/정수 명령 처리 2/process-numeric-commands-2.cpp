@@ -10,26 +10,26 @@ for(int i=0;i<n;i++){
     cin>>command;
 
     if(command=="push") {
-        int n;
-        cin>>n;
-        q.push(n);
+        int x;
+        cin>>x;
+        q.push(x);
     }
-    if(command=="pop") {
+    else if(command=="pop") {
         int v=q.front();
         q.pop();
         cout<<v<<"\n";
     }
-    if(command=="front") {
+    else if(command=="front") {
         cout<<q.front()<<"\n";
     }
-    if(command=="size"){
+    else if(command=="size"){
         cout<<q.size()<<"\n";
     }
     else {
         if(q.empty()) {
-            cout<<"1";
+            cout<<1<<"\n";
         }
-        else {cout<<"0";}
+        else {cout<<0<<"\n";}
     }
 }
 return 0;
