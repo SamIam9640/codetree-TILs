@@ -1,39 +1,43 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
+#define MAX_N 20
+int n;
+int grid[MAX_N][MAX_N];
+
+int GetNumOfGold (int row_s,int col_s,int row_e,int col_e){
+    int num_of_gold=0;
+
+    for(int i=row_s;i<=row_e;i++)
+    for(int j=col_s;j<=col_e;j++)
+    num_of_gold+=grid[i][j];
+
+    return num_of_gold;
+
+}
 
 int main() {
-    int N;
-    cin >> N;
+    int max_gold=0;
 
-    vector<vector<int>> grid(N, vector<int>(N, 0));
+cin>>n;
+for(int row=0;row<n;row++)
+for(int col=0;col<n;col++)
+cin>>grid[row][col];
 
-    // 격자 정보 입력
-    for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
-            cin >> grid[i][j];
-        }
+for(int row=0;row<n;row++){
+    for(int col=0;col<n;col++){
+        if(row+2>=n||col+2>=n) continue;
+
+        int num_of_gold =GetNumOfGold(row,col,row+2,col+2);
+
+        max_gold=max(max_gold,num_of_gold);
     }
+}
 
-    int maxCoins = 0;
 
-    // 3*3 격자 탐색
-    for (int i = 0; i <= N - 3; ++i) {
-        for (int j = 0; j <= N - 3; ++j) {
-            int coins = 0;
-            // 3*3 격자 내의 동전 개수 계산
-            for (int row = i; row < i + 3; ++row) {
-                for (int col = j; col < j + 3; ++col) {
-                    coins += grid[row][col];
-                }
-            }
-            // 최대 동전 개수 갱신
-            maxCoins = max(maxCoins, coins);
-        }
-    }
 
-    cout << maxCoins << endl;
 
-    return 0;
+cout<<max_gold;
+
+return 0;
+
 }
