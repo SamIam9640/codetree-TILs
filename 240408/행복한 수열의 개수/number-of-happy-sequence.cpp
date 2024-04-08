@@ -1,31 +1,50 @@
 #include <bits/stdc++.h>
 #define MAX_N 100
 using namespace std;
-int n;
+int n,m;
 int grid[MAX_N][MAX_N];
+int seq[MAX_N];
 
-int ddd() {
-    int num_of_dig=0;
+bool IsHappySequence() {
+    int consecutive_count=1,max_ccnt=1;
+    for(int i=1;i<n;i++){
+        if(seq[i-1]==seq[i])
+        consecutive_count++;
+        else
+        consecutive_count=1;
+
+        max_ccnt=max(max_ccnt,consecutive_count);
+    }
 
 
-    return num_of_dig;
+    return max_ccnt>=m;
 }
 
 int main(){
-cin>>n;
+cin>>n>>m;
 
-for(int row=0;row<n;row++)
-for(int col=0;col<n;col++)
-cin>>grid[row][col];
+for(int i=0;i<n;i++)
+for(int j=0;j<n;j++)
+cin>>grid[i][j];
 
-for(int row=0;row<n;row++){
-for(int col=0;col<n;col++){
-int num_of_dig=ddd(){}
+int num_happy=0;
 
+for(int i=0;i<n;i++){
+for(int j=0;j<n;j++)
+seq[j]=grid[i][j];
 
+if(IsHappySequence())
+num_happy++;
 
 }
+
+for(int j=0;j<n;j++){
+    for(int i=0;i<n;i++)
+    seq[i]=grid[i][j];
+
+    if(IsHappySequence())
+    num_happy++;
 }
-cout<<num_of_dig;
+cout<<num_happy;
 return 0;
 }
