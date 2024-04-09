@@ -14,8 +14,8 @@ bool IsHappyNumber(){
     consecutive_num++;
     else
     consecutive_num=1;
-}
-    max_ccnt=max(max_ccnt,consecutive_num);
+
+    max_ccnt=max(max_ccnt,consecutive_num);}
     return max_ccnt>=m;
 }
 
