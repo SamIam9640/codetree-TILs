@@ -1,38 +1,39 @@
 #include <bits/stdc++.h>
 #define MAX_N 200
-
 using namespace std;
 
 int n,m;
 int grid[MAX_N][MAX_N];
 
 int shapes[6][3][3]={
-{{1,1,0},
-{1,0,0},
-{0,0,0}},
+    {{1,1,0},
+    {1,0,0},
+    {0,0,0}},
 
-{{1,1,0},
-{0,1,0},
-{0,0,0}},
+    {{1,1,0},
+    {0,1,0},
+    {0,0,0}},
 
-{{0,1,0},
-{1,1,0},
-{0,0,0}},
+    {{1,0,0},
+    {1,1,0},
+    {0,0,0}},
 
-{{1,1,0},
-{1,0,0},
-{0,0,0}},
+    {{0,1,0},
+    {1,1,0},
+    {0,0,0}},
 
-{{1,1,1},
-{0,0,0},
-{0,0,0}},
+    {{1,0,0},
+    {1,0,0},
+    {1,0,0}},
 
-{{1,0,0},
-{1,0,0},
-{1,0,0}},
-};
+    {{1,1,1},
+    {0,0,0},
+    {0,0,0}},
+    };
 
-//주어진 위치에 대하여 가능한 모든 모양을 탐색하며 최대 합을 반환합니다.
+//주어진 위치에 대하여 가능한 모든 모양을 탐색하며 최대 합을
+//합니다.
+
 int GetMaxSum(int x,int y){
     int max_sum=0;
 
@@ -42,13 +43,13 @@ int GetMaxSum(int x,int y){
         for(int dx=0;dx<3;dx++)
         for(int dy=0;dy<3;dy++){
             if(shapes[i][dx][dy]==0) continue;
-            if(x+dx>=n||y+dy>=m) is_possible=false;
+            if(x+dx>=n||y+dy>=m)is_possible=false;
             else sum+=grid[x+dx][y+dy];
         }
         if(is_possible)
         max_sum=max(max_sum,sum);
     }
-return max_sum;
+    return max_sum;
 }
 
 int main() {
