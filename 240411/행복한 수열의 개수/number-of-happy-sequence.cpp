@@ -43,7 +43,7 @@ for(int i=0;i<n;i++)
     if(IsHappySequence())
     num_happy++;
 }
-cout<<num_happy++;
+cout<<num_happy;
 return 0;
 
 }
