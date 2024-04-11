@@ -15,10 +15,8 @@ bool IsHappySequence() {
         consecutive_count++;
         else
         consecutive_count=1;
+          max_ccnt=max(max_ccnt,consecutive_count);
     }
-
-    max_ccnt=max(max_ccnt,consecutive_count);
-
     return max_ccnt>=m;
 }
 
