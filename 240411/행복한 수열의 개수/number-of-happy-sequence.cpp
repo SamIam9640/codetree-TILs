@@ -12,12 +12,12 @@ bool IsHappySequence(){
 
     int consecutive_count=1,max_ccnt=1;
 
-    for(int i=1;i<n;i++)
+    for(int i=1;i<n;i++){
     if(seq[i-1]==seq[i])
     consecutive_count++;
     else
     consecutive_count=1;
-
+    }
     max_ccnt=max(max_ccnt,consecutive_count);
 
 return max_ccnt>=m;
