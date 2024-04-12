@@ -7,7 +7,7 @@ int main() {
 
     cout<<fixed,cout.precision(1);
 
-    cout<<n*30.48<<"cm";
+    cout<<n*30.48;
     return 0;
 
 
