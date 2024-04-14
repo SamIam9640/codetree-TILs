@@ -6,13 +6,10 @@ int main() {
     cin>>a>>b;
 
 
-int i=a;
-while(i<=b) {
-     cout<<i<<" ";
-    if(i%2!=0) i*=2;
-    else i+=3;
-
-   
+    for(int i=a;i<=b;){
+        cout<<i<<" ";
+        if(i%2!=0) i*=2;
+        else i+=3;
     }
     return 0;
 }
