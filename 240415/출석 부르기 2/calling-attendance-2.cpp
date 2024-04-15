@@ -3,9 +3,9 @@ using namespace std;
 
 int main() {
    
-
+int num;
     while(1){
-         int num;
+         
     cin>>num;
         if(num==1) {cout<<"John"<<"\n";}
         else if(num==2) {cout<<"Tom"<<"\n";}
