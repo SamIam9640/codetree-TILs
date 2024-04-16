@@ -1,16 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main() {
     bool satisfied=true;
-    for(int i=0;i<5;i++){
-        int n;
-        cin>>n;
 
-        if(n%3!=0) satisfied=false;
+    for(int i=1;i<=5;i++){
+        int a;
+        cin>>a;
+
+        if(a%3!=0) satisfied=false;
     }
-    if(satisfied==true)
-     cout<<1;
+    if(satisfied==true) cout<<1;
     else
     cout<<0;
+    return 0;
 }
