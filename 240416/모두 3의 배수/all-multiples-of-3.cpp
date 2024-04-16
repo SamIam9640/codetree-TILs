@@ -3,13 +3,13 @@ using namespace std;
 
 int main(){
     bool satisfied=true;
-    for(int i=1;i<=5;i++){
+    for(int i=0;i<5;i++){
         int n;
         cin>>n;
 
         if(n%3!=0) satisfied=false;
     }
-    if(satisfied=true)
+    if(satisfied==true)
      cout<<1;
     else
     cout<<0;
