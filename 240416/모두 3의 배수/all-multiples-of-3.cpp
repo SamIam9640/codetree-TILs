@@ -10,7 +10,7 @@ int main(){
         if(n%3!=0) satisfied=false;
     }
     if(satisfied=true)
-     cout<<"1";
+     cout<<1;
     else
     cout<<0;
 }
