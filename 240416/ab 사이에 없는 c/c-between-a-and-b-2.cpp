@@ -9,8 +9,8 @@ int main() {
     for(int i=a;i<=b;i++){
         if(i%c==0) satisfied=false;
     }
-    if(satisfied==false) cout<<"No";
-    else cout<<"YES";
+    if(satisfied==true) cout<<"YES";
+    else cout<<"NO";
 
     return 0;
 
