@@ -6,9 +6,7 @@ int main() {
     int b=2;
     int c=3;
 
-a=a+b+c;
-b=a+b+c;
-c=a+b+c;
+a=b=c=a+b+c;
 
 cout<<a<<" "<<b<<" "<<c;
 
