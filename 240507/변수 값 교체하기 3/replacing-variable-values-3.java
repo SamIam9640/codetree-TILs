@@ -9,7 +9,7 @@ public class Main {
         a=b;
         b=temp;
 
-        System.out.println(b);
-        System.out.print(a);
+        System.out.println(a);
+        System.out.print(b);
     }
 }
