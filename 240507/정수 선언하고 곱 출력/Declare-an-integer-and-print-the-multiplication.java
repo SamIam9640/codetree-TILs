@@ -3,6 +3,6 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         int a=26,b=5,c=a*b;
 
-        System.out.print(a+" * "+b+" = "c);
+        System.out.print(a+" * "+b+" = "+c);
     }
 }
