@@ -11,6 +11,6 @@ public class Main {
         double b=sc.nextDouble();
 
         System.out.print(c);
-        System.out.printf("%.2f\n%.2f\n");
+        System.out.printf("%.2f\n%.2f",a,b);
     }
 }
