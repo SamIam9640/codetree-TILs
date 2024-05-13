@@ -8,7 +8,7 @@ public class Main {
         a=b;
         b=temp;
 
-        System.out.print(a);
+        System.out.println(a);
         System.out.print(b);
     }
 }
