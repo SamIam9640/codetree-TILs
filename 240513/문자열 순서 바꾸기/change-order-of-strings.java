@@ -9,7 +9,7 @@ public class Main {
         String s=sc.next();
         String t=sc.next();
 
-        System.out.println(s);
-        System.out.print(t);
+        System.out.println(t);
+        System.out.print(s);
     }
 }
