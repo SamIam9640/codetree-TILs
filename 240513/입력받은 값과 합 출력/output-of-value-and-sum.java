@@ -6,8 +6,8 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        int a=nextInt();
-        int b=nextInt();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
 
         int c=a+b;
         System.out.print(a+" "+b+" "+c);
