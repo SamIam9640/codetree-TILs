@@ -3,10 +3,10 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         int a=5,b=6,c=7;
 
-        int temp=b;
-        b=a;
+        int temp=a;
         a=c;
-        c=temp;
+        c=b;
+        b=temp;
 
         System.out.println(a);
         System.out.println(b);
