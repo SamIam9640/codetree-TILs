@@ -10,6 +10,6 @@ public class Main {
         int a=sc.nextInt();
         int b=sc.nextInt();
 
-        System.out.printf("%c\n%.2f\n%.2f",c,a,b);
+        System.out.printf("c\n%.2f\n%.2f",c,a,b);
     }
 }
