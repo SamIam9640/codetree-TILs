@@ -12,6 +12,6 @@ public class Main {
         int b=sc.nextInt();
         int c=sc.nextInt();
 
-        System.out.print(c+"."+b+"."+a);
+        System.out.print(c+"."+a+"."+b);
     }
 }
