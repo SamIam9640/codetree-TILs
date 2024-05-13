@@ -3,6 +3,6 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         double a=25.352;
 
-        System.out.print("%.1f",a);
+        System.out.printf("%.1f",a);
     }
 }
