@@ -9,7 +9,8 @@ public class Main {
         sc.useDelimiter("-");
         int a=sc.nextInt();
         int b=sc.nextInt();
+        int c=sc.nextInt();
 
-        System.out.print("010-"+b+"-"+a);
+        System.out.print(a+"-"+c+"-"+b);
     }
 }
