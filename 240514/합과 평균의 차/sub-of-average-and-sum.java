@@ -9,6 +9,6 @@ public class Main {
         int b=sc.nextInt();
         int c=sc.nextInt();
 
-        System.out.print(a+b+c+"\n"+(a+b+c)/3+"\n"+(a+b+c)-(a+b+c)/3);
+        System.out.print(a+b+c+"\n"+(a+b+c)/3+"\n"+(a+b+c)-((a+b+c)/3));
     }
 }
