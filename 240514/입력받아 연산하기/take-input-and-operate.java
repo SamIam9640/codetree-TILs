@@ -12,6 +12,7 @@ public class Main {
         a+=87;
         b%=10;
 
-        System.out.print(a+"\n"+b);
+        System.out.println(a);
+        System.out.println(b);
     }
 }
