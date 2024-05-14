@@ -8,6 +8,6 @@ public class Main {
         int a=sc.nextInt();
         int b=sc.nextInt();
 
-        System.out.print((a+b)+" "+(double)(a+b)/2)
+        System.out.print((a+b)+" "+(double)(a+b)/2);
     }
 }
