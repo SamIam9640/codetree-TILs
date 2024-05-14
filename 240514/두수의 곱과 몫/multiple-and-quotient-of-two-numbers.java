@@ -9,6 +9,7 @@ public class Main {
         int a=sc.nextInt();
         int b=sc.nextInt();
 
-        System.out.print(a+" * "+b+ " = "+a*b+"\n"+a+" / "+b+" = "+a/b);
+        System.out.println(a+" * "+b+ " = "+a*b);
+        System.out.print(a+" / "+b+" = "+a/b);
     }
 }
