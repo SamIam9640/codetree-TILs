@@ -11,7 +11,7 @@ public class Main {
         int b=sc.nextInt();
         int c=sc.nextInt();
 
-        System.out.print(a+"-"+b+"-"+c);
+        System.out.print("0"+a+"-"+c+"-"+b);
 
     }
 }
