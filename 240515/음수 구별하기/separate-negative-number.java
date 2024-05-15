@@ -10,5 +10,8 @@ public class Main{
             System.out.println(a);
             System.out.print("minus");
         }
+        else {
+            System.out.print(a);
+        }
     }
 }
