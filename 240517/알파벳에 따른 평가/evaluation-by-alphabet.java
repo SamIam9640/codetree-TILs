@@ -6,7 +6,7 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        int a=sc.nextInt();
+        char a=sc.next().charAt(0);
 
         if(a=='S'){
             System.out.print("Superior");
