@@ -9,13 +9,13 @@ public class Main {
         int a=sc.nextInt();
         int b=sc.nextInt();
 
-        if(a%2==0){
+        if((a%2)==0){
             System.out.print("even");
         }
         else{
             System.out.print("odd");
         }
-        if(b%2==0){
+        if((b%2)==0){
             System.out.print("even");
         }
         else{
