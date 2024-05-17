@@ -6,16 +6,16 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        double a=sc.nextInt();
+        double a=sc.nextDouble();
 
         if(a>=1.0){
-            System.out.print("High");
+            System.out.println("High");
         }
         else if(a>=0.5){
-            System.out.print("Middle");
+            System.out.println("Middle");
         }
         else{
-            System.out.print("Low");
+            System.out.println("Low");
         }
     }
 }
