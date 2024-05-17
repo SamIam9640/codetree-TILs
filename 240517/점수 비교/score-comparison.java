@@ -11,6 +11,11 @@ public class Main {
         int c=sc.nextInt();
         int d=sc.nextInt();
 
-        System.out.print(a>c&&b>>d ? 1 : 0);
+       if(a>c&&b>d){
+        System.out.print(1);
+       }
+       else{
+        System.out.print(0);
+       }
     }
 }
