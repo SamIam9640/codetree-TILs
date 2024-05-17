@@ -7,7 +7,6 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 
         int a=sc.nextInt();
-        int b=sc.nextInt();
 
         if(a%3==0){
             System.out.println("YES");
