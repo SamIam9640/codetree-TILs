@@ -11,7 +11,7 @@ public class Main {
         if(a%2==0) {
             a/=2;
         }
-        if(a%2==1){
+        if(a%2!=0){
             System.out.print(a=(a+1)/2);
         }
     }
