@@ -12,7 +12,7 @@ public class Main {
             a/=2;
         }
         if(a%2==1){
-            a=(a+1)/2;
+            System.out.print(a=(a+1)/2);
         }
     }
 }
