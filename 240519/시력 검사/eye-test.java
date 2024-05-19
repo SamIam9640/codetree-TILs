@@ -12,7 +12,7 @@ public class Main {
         if(r_eye>=1.0&&l_eye>=1.0){
             System.out.print("High");
         }
-        else if(r_eye>=0.5&&r_eye>=0.5){
+        else if(r_eye>=0.5&&l_eye>=0.5){
             System.out.print("Middle");
         }
         else{
