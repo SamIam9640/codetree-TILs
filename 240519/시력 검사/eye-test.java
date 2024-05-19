@@ -6,8 +6,8 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        double r_eye=sc.nextInt();
-        double l_eye=sc.nextInt();
+        double r_eye=sc.nextDouble();
+        double l_eye=sc.nextDouble();
 
         if(r_eye>=1.0&&l_eye>=1.0){
             System.out.print("High");
