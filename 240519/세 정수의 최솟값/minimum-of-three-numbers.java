@@ -13,11 +13,11 @@ public class Main {
         if(a<=b&&a<=c){
             System.out.print(a);
         }
-        else if(a<=b&&a>=c){
-            System.out.print(c);
-        }
-        else if(a>=b&&c>=b){
+        else if(b<=c&&b<=a){
             System.out.print(b);
+        }
+        else{
+            System.out.print(c);
         }
     }
 }
