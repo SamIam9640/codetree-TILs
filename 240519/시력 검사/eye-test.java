@@ -9,7 +9,7 @@ public class Main {
         double a=nextDouble();
         double b=nextDouble();
 
-        if(a>=1.0%%b>=1.0){
+        if(a>=1.0&&b>=1.0){
             System.out.print("High");
         }
         else if(a>=0.5&&b>=0.5){
