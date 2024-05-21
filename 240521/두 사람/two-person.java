@@ -7,8 +7,8 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 
         int a_age=sc.nextInt();
-        int b_age=sc.nextInt();
         char a_gen=sc.next().charAt(0);
+        int b_age=sc.nextInt();
         char b_gen=sc.next().charAt(0);
 
         if((a_age>=19&&a_gen=='M')||(b_age>=19&&b_gen=='M')){
