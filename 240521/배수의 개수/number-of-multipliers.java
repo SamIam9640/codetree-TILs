@@ -9,9 +9,9 @@ public class Main {
     for(int i=0;i<10;i++){
         int a=sc.nextInt();
 
-        if(i%3==0)
+        if(a%3==0)
         cnt1++;
-        if(i%5==0)
+        if(a%5==0)
         cnt2++;
     }
 
