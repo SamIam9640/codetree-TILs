@@ -12,5 +12,8 @@ public class Main {
         if((a_age>=19&&a_sex=='M')||(b_age>=19&&b_sex=='M')){
             System.out.print(1);
         }
+        else{
+            System.out.print(0);
+        }
     }
 }
