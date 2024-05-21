@@ -11,9 +11,9 @@ public class Main {
         if(a%2!=0){
         
             cnt++;
-        System.out.print(cnt);
         }
         
     }
+    System.out.print(cnt);
     }
 }
