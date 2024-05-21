@@ -10,8 +10,9 @@ public class Main {
         if(a%2!=0){
         int cnt=0;
             cnt++;
-        }
         System.out.print(cnt);
+        }
+        
     }
     }
 }
