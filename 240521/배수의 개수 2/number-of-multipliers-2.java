@@ -6,8 +6,9 @@ public class Main {
         Scanner sc=new Scanner(System.in);
     for(int i=0;i<10;i++){
         int a=sc.nextInt();
-        int cnt=0;
+        
         if(a%2!=0){
+        int cnt=0;
             cnt++;
         }
     }
