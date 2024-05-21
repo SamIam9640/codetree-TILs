@@ -10,17 +10,18 @@ public class Main {
         int b=sc.nextInt();
         int c=sc.nextInt();
 
-        if(a>b){
-            if((b>c)||(a>c))
-            System.out.print(a);
+        if(a>=b){
+        if(a>=c)
+        System.out.print(a);
+        else
+        System.out.print(c);
         }
-        else if(b>a){
-            if((b>c)||(a>c))
+        else{
+            if(b>=c)
             System.out.print(b);
+        else
+        System.out.print(c);
         }
-        else if(c>a){
-            if((c>b)||(a>b))
-            System.out.print(c);
-        }
+        
     }
 }
