@@ -11,7 +11,7 @@ public class Main {
         int cnt=0;
             cnt++;
         }
+        System.out.print(cnt);
     }
-    System.out.print(cnt);
     }
 }
