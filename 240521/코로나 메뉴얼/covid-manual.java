@@ -20,8 +20,8 @@ public class Main {
             else
             System.out.print('N');
         }
-        else if(b_sym=='Y'&&b_tem>=37){
-            if(c_sym=='Y'&&c_tem>=37)
+        else{
+            if((b_sym=='Y'&&b_tem>=37)&&(c_sym=='Y'&&c_tem>=37))
             System.out.print('E');
             else
             System.out.print('N');
