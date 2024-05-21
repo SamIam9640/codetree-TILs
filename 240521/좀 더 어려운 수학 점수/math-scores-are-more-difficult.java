@@ -12,7 +12,7 @@ public class Main {
         if(a_math>b_math){
             Sysyem.out.print("A");
         }
-        else if(a_math<b_math{
+        else if(a_math<b_math){
             System.out.print("B");
         }
         else if(a_math==b_math&&a_english>b_english){
