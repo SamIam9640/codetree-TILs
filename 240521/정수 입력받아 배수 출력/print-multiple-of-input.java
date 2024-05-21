@@ -7,10 +7,9 @@ public class Main {
 
     int n=sc.nextInt();
 
-    for(int i=0;i<5;i++){
-        for(int a=n;a<100;a+=n){
-            System.out.print(a+" ");
-        }
+    for(int i=1;i<=5;i++){
+        System.out.print((n*i)+" ");
     }
-   }
+    
+    }
 }
