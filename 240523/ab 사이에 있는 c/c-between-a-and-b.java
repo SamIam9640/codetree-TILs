@@ -9,9 +9,9 @@ public class Main {
     int a=sc.nextInt();
     int b=sc.nextInt();
     int c=sc.nextInt();
-
+    boolean satisfied=false;
     for(int i=a;i<=b;i++){
-        boolean satisfied=false;
+        
         if(i%c==0)
         satisfied=true;
     }
