@@ -11,7 +11,7 @@ public class Main {
     int c=sc.nextInt();
 
     for(int i=a;i<=b;i++){
-        bool satisfied=false;
+        boolean satisfied=false;
         if(i%c==0)
         satisfied=true;
 
