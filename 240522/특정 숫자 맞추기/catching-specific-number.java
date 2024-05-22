@@ -13,7 +13,7 @@ public class Main {
         else if(n>25)
         System.out.print("Lower");
         else{
-            System.out.print("Good")
+            System.out.print("Good");
             break;
         }
     }
