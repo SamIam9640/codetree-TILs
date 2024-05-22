@@ -5,20 +5,15 @@ public class Main {
         // 여기에 코드를 작성해주세요.
     Scanner sc=new Scanner(System.in);
 
-    
-
     while(true){
     int a=sc.nextInt();
     int b=sc.nextInt();
     char c=sc.next().charAt(0);
-    
-    
-            System.out.println(a*b);
-        
-        if(c=='C')
-        break;
 
+    System.out.println(a*b);
+    if(c=='C'){
+        break;
     }
-    
+    }
     }
 }
