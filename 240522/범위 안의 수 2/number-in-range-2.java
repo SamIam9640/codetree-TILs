@@ -6,6 +6,7 @@ public class Main {
     Scanner sc=new Scanner(System.in);
 
     int sum=0;
+    int cnt=0;
     double avg=0;
 
     for(int i=0;i<10;i++){
