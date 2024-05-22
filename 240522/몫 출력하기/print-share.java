@@ -6,16 +6,15 @@ public class Main {
     while(true){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
+        int cnt=0;
 
         if(n%2!=0)
         continue;
-        else if{
-            for(int i=0;i<3;i++){
-                n/=2;
-                System.out.println(n);
-            }
-            
+        else{
+            System.out.println(n/2);
+            cnt++;
         }
+        if(cnt>=3)
         break;
     }
     
