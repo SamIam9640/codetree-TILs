@@ -6,18 +6,19 @@ public class Main {
         Scanner sc=new Scanner(System.in);
     int sum=0;
     int cnt=0;
-    double avg;
+   
     while(true){
         int n=sc.nextInt();
 
-        cnt++;
-        sum+=i;
 
-        avg=(double) sum/cnt;
+        
         if(n!=20){
-            System.out.printf(".1f",avg);
+            System.out.printf("%.2f",(double) sum/cnt);
             break;
         }
+        
+        cnt++;
+        sum+=n;
     }
     }
 }
