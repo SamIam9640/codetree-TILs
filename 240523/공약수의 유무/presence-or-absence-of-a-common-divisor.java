@@ -8,7 +8,7 @@ public class Main {
     int a=sc.nextInt();
     int b=sc.nextInt();
 
-    bool satisfied=false;
+    boolean satisfied=false;
 
     for(int i=a;i<=b;i++){
         if(1920%i==0&&2880%i==0)
