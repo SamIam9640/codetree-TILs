@@ -7,10 +7,10 @@ public class Main {
 
     int n=sc.nextInt();
 
-    boolean satisfied=true;
+    boolean satisfied=false;
     for(int i=2;i<n;i++){
-        if(n%i==0)
-        satisfied=false;
+        if(n%i!=0)
+        satisfied=true;
     }
     if(satisfied==true)
     System.out.print('P');
