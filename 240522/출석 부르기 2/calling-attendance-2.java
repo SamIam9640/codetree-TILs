@@ -9,16 +9,16 @@ public class Main {
         int n=sc.nextInt();
 
         if(n==1)
-        System.out.print("John");
+        System.out.println("John");
         else if(n==2)
-        System.out.print("Tom");
+        System.out.println("Tom");
         else if(n==3)
-        System.out.print("Paul");
+        System.out.println("Paul");
         else if(n==4)
-        System.out.print("Sam");
+        System.out.println("Sam");
 
         else{
-            System.out.print("Vacancy");
+            System.out.println("Vacancy");
             break;
         }
     }
