@@ -7,12 +7,14 @@ public class Main {
 
     int sum=0;
     int cnt=0;
-    double avg;
+   
+  
 
     while(true){
         int n=sc.nextInt();
         if(n>=30||n<=19){
-            System.out.printf("%.2f",avg);
+            System.out.printf("%.2f",(double) sum/cnt);
+            break;
         }
 
         sum+=n;
