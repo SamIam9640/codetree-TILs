@@ -8,7 +8,7 @@ public class Main {
     int n=sc.nextInt();
     int sum=0;
 
-    for(int i=1;i<=n;i++){
+    for(int i=1;i<=100;i++){
         sum+=i;
         if(sum>=n)
         System.out.print(i);
