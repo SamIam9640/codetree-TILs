@@ -9,13 +9,14 @@ public class Main {
 
         if(n%2!=0)
         continue;
-        else{
+        else if{
             for(int i=0;i<3;i++){
                 n/=2;
                 System.out.println(n);
             }
-            break;
+            
         }
+        break;
     }
     
     }
