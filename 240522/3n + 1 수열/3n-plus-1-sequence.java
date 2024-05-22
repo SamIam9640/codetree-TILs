@@ -8,23 +8,15 @@ public class Main {
     while(true){
         int n=sc.nextInt();
 
-        if(n%2==0){
+        if(n==1)
+        break;
+
+        if(n%2!=0)
+        n=3*n+1;
+        else
         n/=2;
         cnt++;
-        if(n==1){
-        System.out.print(cnt);
-        break;
-        }
-        }
-        else{
-            n=3n+1;
-            cnt++;
-            if(n==1){
-            System.out.print(cnt);
-        break;
-            }
-            }
     }
-
+System.out.println(cnt);
     }
 }
