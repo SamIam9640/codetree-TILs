@@ -9,7 +9,7 @@ public class Main {
     int b=sc.nextInt();
     int prod=1;
 
-    for(int i=0;i<b;i++){
+    for(int i=1;i<=b;i++){
         prod*=a;
     }
     System.out.print(a);
