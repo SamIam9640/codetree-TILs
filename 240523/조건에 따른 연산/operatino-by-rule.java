@@ -11,19 +11,17 @@ public class Main {
 
     while(true){
         if(n>=1000){
-            System.out.print(cnt);
+            
             break;
         }
-        if(n%2==0){
+        if(n%2==0)
         n=3*n+1;
-        cnt++;
-        }
-        else{
+        
+        
+        else
             n=2*n+2;
             cnt++;
-        }
-
     }
-    
+System.out.print(cnt);
     }
-}
+    }
