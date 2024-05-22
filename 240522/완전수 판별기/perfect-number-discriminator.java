@@ -14,6 +14,8 @@ public class Main {
         }
     }
     if(sum==n)
-    System.out.print(n);
+    System.out.print('P');
+    else
+    System.out.print('N');
     }
 }
