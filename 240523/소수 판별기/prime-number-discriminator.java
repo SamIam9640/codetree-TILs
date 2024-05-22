@@ -13,8 +13,8 @@ public class Main {
         satisfied=true;
     }
     if(satisfied==true)
-    System.out.print('P');
-    else
     System.out.print('C');
+    else
+    System.out.print('P');
     }
 }
