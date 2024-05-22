@@ -13,7 +13,7 @@ public class Main {
         if(c=='C'){
             System.out.println(a*b);
         }
-        break;
+
     }
     
     }
