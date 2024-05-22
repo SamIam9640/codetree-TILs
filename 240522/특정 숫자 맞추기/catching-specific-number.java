@@ -9,11 +9,11 @@ public class Main {
         int n=sc.nextInt();
 
         if(n<25)
-        System.out.print("Higher");
+        System.out.println("Higher");
         else if(n>25)
-        System.out.print("Lower");
+        System.out.println("Lower");
         else{
-            System.out.print("Good");
+            System.out.println("Good");
             break;
         }
     }
