@@ -13,6 +13,7 @@ public class Main {
         int a=sc.nextInt();
         sum+=a;
     }
+    avg=(double) sum/n;
     System.out.printf("%d %.1f",sum,avg);
     }
 }
