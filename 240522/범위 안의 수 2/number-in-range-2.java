@@ -12,7 +12,7 @@ public class Main {
         int a=sc.nextInt();
 
         if(a>=0&&a<=200){
-            sum+=i;
+            sum+=a;
             cnt++;
         }
     }
