@@ -14,7 +14,6 @@ public class Main {
             sum+=i;
         }
     }
-    System.out.print(sum);
     }
     else{
         for(int i=b;i<=a;i++){
