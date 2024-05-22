@@ -14,7 +14,7 @@ public class Main {
     cnt++;
 
     if(n>19&&n<30){
-        System.out.printf("%.2f",(doube) sum/cnt);
+        System.out.printf("%.2f",(double) sum/cnt);
         break;
     }
     
