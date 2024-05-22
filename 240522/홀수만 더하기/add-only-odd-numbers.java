@@ -14,6 +14,6 @@ public class Main {
         if(a%2!=0&&a%3==0)
         sum+=a;
     }
-    System.out.print(a);
+    System.out.print(sum);
     }
 }
