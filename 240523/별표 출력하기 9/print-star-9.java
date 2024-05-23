@@ -8,13 +8,13 @@ public class Main {
     int n=sc.nextInt();
 
     //공백 n-1-i
-    //별 n*2+1
+    //별 i*2+1
     //모양에 맞게 별 출력
     for(int i=0;i<n;i++){
         for(int j=0;j<n-1-i;j++){
             System.out.print("  ");
         }
-        for(int j=0;j<n*2+1;j++){
+        for(int j=0;j<i*2+1;j++){
             System.out.print("* ");
         }
         System.out.println();
