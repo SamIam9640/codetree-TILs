@@ -11,24 +11,22 @@ public class Main {
 
     //모양에 맞춰 별 출력
     for(int i=0;i<n;i++){
-        for(int j=n-1;j>=0;j++){
+       for(int j=0;j<n-i-1;j++){
+        System.out.print(" ");
+       }
+       for(int j=0;j<i+1;j++){
+        System.out.print("* ");
+       }
+       System.out.println();
+    }
+    for(int i=n-2;i>=0;i--){
+        for(int j=0;j<n-i-1;j++){
             System.out.print(" ");
         }
-        for(int j=0;j<n;j++){
+        for(int j=0;j<i+1);j++){
             System.out.print("* ");
         }
+    }
     System.out.println();
-
-    //모양에 맞춰 아래별 출력
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<i+1;j++){
-            System.out.print(" ");
-        }
-        for(int j=n-1;j>=0;j--){
-            System.out.print("* ");
-        }
-        System.out.println();
-    }
-    }
     }
 }
