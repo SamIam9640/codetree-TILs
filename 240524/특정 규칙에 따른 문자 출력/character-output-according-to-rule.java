@@ -19,7 +19,7 @@ public class Main {
         System.out.println();
     }
     //모양에 맞춰서 아래부분 추력
-    for(int i=0;i<n-2;i++){
+    for(int i=0;i<=n-2;i++){
         for(int j=0;j<n-1-i;j++){
             System.out.print("@ ");
         }
