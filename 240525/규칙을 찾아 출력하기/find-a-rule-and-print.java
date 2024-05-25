@@ -19,6 +19,7 @@ public class Main {
             else
             System.out.print("  ");
         }
+        System.out.println();
     }
     
     }
