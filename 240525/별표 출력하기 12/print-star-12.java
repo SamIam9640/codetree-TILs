@@ -11,10 +11,14 @@ public class Main {
                 if(j%2==0){
                     if(i==0)
                 System.out.print("*");
+                else
+                System.out.print(" ");
                 }
                 else{
                     if(i<=j)
                     System.out.print("* ");
+                    else
+                    System.out.print(" ");
                 }
                 System.out.println();
             }
