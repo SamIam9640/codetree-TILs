@@ -10,7 +10,7 @@ public class Main {
 
         //칸에 알맞은 숫자 입력하기
         for(int i=1;i<=a;i++){
-            for(int i=1;i<=b;i++){
+            for(int j=1;j<=b;j++){
                 System.out.print(i*j+" ");
             }
             System.out.println();
