@@ -18,7 +18,7 @@ public class Main {
                     if(i<=j)
                     System.out.print("* ");
                     else
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
                 System.out.println();
             }
