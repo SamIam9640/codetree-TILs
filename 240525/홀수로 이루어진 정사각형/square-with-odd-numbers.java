@@ -7,9 +7,9 @@ public class Main {
         int n=sc.nextInt();
 
         //모양에 맞추어 숫자 출력
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
-                System.out.print(9+(2*i*j)+" ");
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                System.out.print((11+i*2+j*2)+" ");
             }
             System.out.println();
         }
