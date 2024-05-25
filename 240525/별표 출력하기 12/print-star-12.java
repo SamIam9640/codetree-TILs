@@ -12,7 +12,7 @@ public class Main {
                 System.out.print("*");
                 }
                 else{
-                    for(int k=0;k<j+1;j++)
+                    if(i<=j)
                     System.out.print("* ");
                 }
                 System.out.println();
