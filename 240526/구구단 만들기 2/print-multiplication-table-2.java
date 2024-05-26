@@ -13,7 +13,8 @@ public class Main {
             if(j!=a)
             System.out.print(" / ");
         }
+        System.out.println();
     }
-    System.out.println();
+    
     }
 }
