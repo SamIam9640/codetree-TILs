@@ -7,16 +7,16 @@ public class Main {
     int n=sc.nextInt();
 
     int cnt=1;
-    for(int i=n;i>=1;i--){
-        for(int j=n;j>=1;j--){
-            if(cnt>9)
-            cnt=1;
-            if(j>i)
-            System.out.print("  ");
-            else
-            System.out.print(cnt+" ");
+    for(int i=0;i<n;i++){
+        for(int j=0;j<i;j++)
+        System.out.print("  ");
+        for(int j=0;j<n-i;j++){
+            System.out.print(cnt+ " ");
             cnt++;
+            if(cnt==10)
+            cnt=1;
         }
+    
         System.out.println();
     }
     }
