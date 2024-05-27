@@ -18,7 +18,7 @@ public class Main {
         
     }
     avg=(double)sum/cnt;
-    System.out.printf("%d %.1f",sum,cnt);
+    System.out.printf("%d %.1f",sum,avg);
         // 여기에 코드를 작성해주세요.
     }
 }
