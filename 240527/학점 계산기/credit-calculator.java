@@ -17,6 +17,7 @@ public class Main {
         avg=(double) sum/cnt;
 
         System.out.printf("%.1f",avg);
+        System.out.println();
         if(avg>=4.0)
         System.out.print("Perfect");
         else if(avg>=3.0)
