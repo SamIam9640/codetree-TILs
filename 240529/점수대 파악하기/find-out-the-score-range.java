@@ -14,7 +14,9 @@ public class Main {
         arr[i]=sc.nextInt();
         if(arr[i]==0)
         break;
-       
+        if(arr[i]<10)
+        continue;
+
         countArr[arr[i]/10]++;
     }
     for(int i=10;i>=1;i--){
