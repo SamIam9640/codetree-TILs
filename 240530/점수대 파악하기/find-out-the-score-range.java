@@ -15,8 +15,8 @@ public class Main {
         continue;
         countArr[arr[i]/10]++;
         }
+        for(int i=10;i>=1;i--){
+        System.out.println(i+"0 - "+countArr[i]);
     }
-    for(int i=10;i>=1;i--){
-        System.println(i+"0 - "+countArr[i]);
     }
 }
