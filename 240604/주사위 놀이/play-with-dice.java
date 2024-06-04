@@ -15,7 +15,7 @@ public class Main {
     newArr[arr[i]]++;
 
     for(int i=1;i<7;i++)
-    System.out.print(i + " - "+ newArr[i]);
+    System.out.println(i + " - "+ newArr[i]);
 
     }
 }
