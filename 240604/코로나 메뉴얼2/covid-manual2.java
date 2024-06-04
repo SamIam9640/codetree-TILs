@@ -9,7 +9,7 @@ public class Main {
     int ans=0;
 
     char c;
-    for(int i=0;i<4;i++){
+    for(int i=0;i<3;i++){
         c=sc.next().charAt(0);
         arr[i]=sc.nextInt();
 
