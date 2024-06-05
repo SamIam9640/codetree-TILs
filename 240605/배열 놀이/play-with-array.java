@@ -22,8 +22,9 @@ public class Main {
         }
         else if(qtype==2){
             int b=sc.nextInt();
-            for(int j=0;j<n;j++){
             int idx=-1;
+            for(int j=0;j<n;j++){
+            
             if(arr[i]==b)
             idx=i;
             break;
@@ -37,8 +38,9 @@ public class Main {
             int a=sc.nextInt();
             int b=sc.nextInt();
 
-            for(int i=a-1;i<b;i++)
+            for(int j=a-1;j<b;j++)
             System.out.print(arr[i]+" ");
+            
         }
     }
     }
