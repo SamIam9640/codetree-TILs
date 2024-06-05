@@ -30,7 +30,7 @@ public class Main {
             if(success){
                 
                     System.out.print("Yes");
-                    
+                    System.exit(0);
                 
             }
         }
