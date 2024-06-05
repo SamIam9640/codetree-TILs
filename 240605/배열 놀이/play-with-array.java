@@ -28,11 +28,8 @@ public class Main {
                 idx=j;
                 break;
             }
-            if(idx==-1)
-            System.out.println(0);
-            else
-            System.out.println(idx);
         }
+        System.out.println(idx+1);
        }
        else {
         int a=sc.nextInt();
