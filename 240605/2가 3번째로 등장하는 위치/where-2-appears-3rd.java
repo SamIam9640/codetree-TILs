@@ -17,7 +17,7 @@ public class Main {
         if(arr[i]==2){
         cnt++;
         if(cnt==3){
-        position=i;
+        position=i+1;
         break;
         }
         }
