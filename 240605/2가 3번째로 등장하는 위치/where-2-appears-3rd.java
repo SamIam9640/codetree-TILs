@@ -6,6 +6,7 @@ public class Main {
 
     int n=sc.nextInt();
     int cnt=0;
+    int position=0;
     int[] arr=new int[100];
 
     for(int i=0;i<n;i++){
@@ -16,12 +17,12 @@ public class Main {
         if(arr[i]==2){
         cnt++;
         if(cnt==3){
-        
+        position=i;
         break;
         }
         }
     }
-    System.out.print(cnt);
+    System.out.print(position);
 
     }
 }
