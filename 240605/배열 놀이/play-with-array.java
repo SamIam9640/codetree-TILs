@@ -20,11 +20,11 @@ public class Main {
         System.out.println(arr[a-1]);
        }
        else if(qtype==2){
-        int b=sc.nextInt();
+        int a=sc.nextInt();
         int idx=-1;
 
         for(int j=0;j<n;j++){
-            if(arr[j]==b){
+            if(arr[j]==a){
                 idx=j;
                 break;
             }
