@@ -10,7 +10,7 @@ public class Main {
 
         int max_val=arr[0];
 
-        for(int i=0;i<10;i++)
+        for(int i=1;i<10;i++)
         if(arr[i]>max_val){
             max_val=arr[i];
         }
