@@ -5,14 +5,17 @@ public class Main {
     Scanner sc=new Scanner(System.in);
 
     int[]arr=new int[100];
-    int maxval=arr[0];
-    int minval=arr[0];
+    
 
     for(int i=0;i<100;i++){
         arr[i]=sc.nextInt();
         if(arr[i]==999||arr[i]==-999)
         break;
     }
+
+    int maxval=arr[0];
+    int minval=arr[0];
+
     for(int i=1;i<100;i++){
         if(arr[i]==999||arr[i]==-999)
         break;
@@ -22,6 +25,7 @@ public class Main {
         if(minval>arr[i]){
         minval=arr[i];}
     }
+    
     System.out.print(maxval+" "+minval);
     }
 }
