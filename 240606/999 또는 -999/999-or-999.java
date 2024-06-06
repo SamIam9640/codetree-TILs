@@ -12,6 +12,10 @@ public class Main {
         arr[i]=sc.nextInt();
         if(arr[i]==999||arr[i]==-999)
         break;
+    }
+    for(int i=1;i<100;i++){
+        if(arr[i]==999||arr[i]==-999)
+        break;
         if(arr[i]>maxval){
             maxval=arr[i];
         }
