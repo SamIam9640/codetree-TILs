@@ -33,7 +33,7 @@ public class Main {
 
     sum=0;
     for(int i=0;i<2;i++){
-        for(int j=0;j<2;j++)
+        for(int j=0;j<4;j++)
             sum+=arr2d[i][j];
     }
         System.out.printf("%.1f ",(double)sum/8);
