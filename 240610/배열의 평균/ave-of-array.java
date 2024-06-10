@@ -7,7 +7,6 @@ public class Main {
     int[][] arr2d=new int[2][4];
     int sum=0;
 
-    
     for(int i=0;i<2;i++){
         for(int j=0;j<4;j++){
             arr2d[i][j]=sc.nextInt();
@@ -17,28 +16,27 @@ public class Main {
     for(int i=0;i<2;i++){
         sum=0;
         for(int j=0;j<4;j++)
-            sum+=arr2d[i][j];
-            System.out.printf("%.1f ",(double)sum/4);
+        sum+=arr2d[i][j];
+        System.out.printf("%.1f ",(double)sum/4);
     }
-System.out.println();
+    System.out.println();
 
     for(int j=0;j<4;j++){
         sum=0;
-        for(int i=0;i<2;i++)
+        for(int i=0;i<2;i++){
             sum+=arr2d[i][j];
-            System.out.printf("%.1f ",(double)sum/2);
-            
+        }
+        System.out.printf("%.1f ",(double)sum/2);
     }
     System.out.println();
 
 
     sum=0;
     for(int i=0;i<2;i++){
-        for(int j=0;j<4;j++)
-            sum +=arr2d[i][j];
+        for(int j=0;j<2;j++)
+            sum+=arr2d[i][j];
     }
-System.out.printf("%.1f",(double)sum/8);
-
-
-    }
+        System.out.printf("%.1f ",(double)sum/8);
+    
+        }
 }
