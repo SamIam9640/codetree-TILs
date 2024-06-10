@@ -7,18 +7,17 @@ public class Main {
     int[][] arr2d=new int [100][100];
     int[][] arr2d2=new int[100][100];
     int[][] arr2d3=new int[100][100];
-    int num=sc.nextInt();
-    int num2=sc.nextInt();
+    
 
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
-            arr2d[i][j]=num++;
+            arr2d[i][j]=sc.nextInt();
         }
     }
 
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
-            arr2d2[i][j]=num2++;
+            arr2d2[i][j]=sc.nextInt();
         }
     }
 
