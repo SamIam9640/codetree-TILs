@@ -6,6 +6,7 @@ public class Main {
 
     int n=sc.nextInt();
     int m=sc.nextInt();
+
     int[][] arr2d=new int[10][10];
 
     for(int i=0;i<m;i++){
@@ -16,7 +17,7 @@ public class Main {
 
     for(int i=1;i<=n;i++){
         for(int j=1;j<=n;j++){
-            System.out.print(arr2d[i][j]+ " ");
+            System.out.print(arr2d[i][j]+" ");
         }
         System.out.println();
     }
