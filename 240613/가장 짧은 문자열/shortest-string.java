@@ -15,7 +15,8 @@ public class Main {
     int maxlen=Math.max(len1,Math.max(len2,len3));
     int minlen=Math.min(len1,Math.min(len2,len3));
 
-    System.out.print(maxlen-minlen);
+    int dif=maxlen-minlen;
+    System.out.print(dif);
 
     }
 }
