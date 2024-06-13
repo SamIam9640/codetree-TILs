@@ -8,12 +8,11 @@ public class Main {
     int m=sc.nextInt();
 
     int[][] arr2d=new int[10][10];
-    int cnt=1;
 
-    for(int i=0;i<m;i++){
+    for(int i=1;i<=m;i++){
         int r=sc.nextInt();
         int c=sc.nextInt();
-        arr2d[r][c]=cnt++;
+        arr2d[r][c]=i;
     }
 
     for(int i=1;i<=n;i++){
