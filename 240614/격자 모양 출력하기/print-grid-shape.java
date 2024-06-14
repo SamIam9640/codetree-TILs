@@ -9,7 +9,7 @@ public class Main {
     int n=sc.nextInt();
     int m=sc.nextInt();
 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<m;i++){
         int r=sc.nextInt();
         int c=sc.nextInt();
         arr2d[r][c]=r*c;
