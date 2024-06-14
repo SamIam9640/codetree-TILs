@@ -3,19 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
-    
-    String[] str=new String[10];
 
-    for(int i=0;i<10;i++){
-        str[i]=sc.next();
-    }
+    String [] arr=new String[10];
+
+    for(int i=0;i<10;i++)
+    arr[i]=sc.next();
 
     int lenall=0;
 
     for(int i=0;i<10;i++){
-        int len=str[i].length();
+        int len=arr[i].length();
         lenall+=len;
-    }    
+        }
     System.out.print(lenall);
     }
 }
