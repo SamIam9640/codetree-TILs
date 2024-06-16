@@ -21,7 +21,7 @@ public class Main {
     boolean exists2=false;
 
     for(int i=0;i<str.length()-1;i++){
-        if(str.charAt(i)=='a'&&str.charAt(i)=='b'){
+        if(str.charAt(i)=='a'&&str.charAt(i+1)=='b'){
             exists2=true;
         }
     }
