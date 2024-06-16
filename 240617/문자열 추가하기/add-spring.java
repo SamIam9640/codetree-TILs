@@ -7,8 +7,9 @@ public class Main {
     String str=sc.next();
 
     String a="Hello";
+    str+=a;
 
-    System.out.print(str+a);
+    System.out.print(str);
 
     }
 }
