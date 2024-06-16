@@ -10,7 +10,7 @@ public class Main {
         System.out.print("Yes ");
     }
     else{
-        System.out.print("No");
+        System.out.print("No ");
     }
 
     if(str.contains("ab")){
