@@ -15,7 +15,7 @@ public class Main {
     if(c.charAt(i)!=d.charAt(i))
     satisfied=false;
 
-    if(satisfied==true)
+    if(satisfied)
     System.out.print("true");
     else
     System.out.print("false");
