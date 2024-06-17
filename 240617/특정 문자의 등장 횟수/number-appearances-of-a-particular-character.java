@@ -5,20 +5,17 @@ public class Main {
     Scanner sc=new Scanner(System.in);
 
     String str=sc.next();
-
     int cnt1=0;
     int cnt2=0;
 
+
     for(int i=0;i<str.length()-1;i++){
-        if(str.charAt(i)=='e'&&str.charAt(i+1)=='e'){
-            cnt1++;
-        }
+        if(str.charAt(i)=='e'&&str.charAt(i+1)=='e')
+        cnt1++;
         if(str.charAt(i)=='e'&&str.charAt(i+1)=='b')
         cnt2++;
     }
-
-    System.out.print(cnt1+" "+cnt2);    
-    
+    System.out.print(cnt1+" "+cnt2);
 
     }
 }
