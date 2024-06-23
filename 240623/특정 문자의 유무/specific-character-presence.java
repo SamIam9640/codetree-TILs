@@ -20,6 +20,7 @@ public class Main {
     System.out.print("Yes ");
     else
     System.out.print("No ");
+    
     if(satisfied2)
     System.out.print("Yes");
     else
