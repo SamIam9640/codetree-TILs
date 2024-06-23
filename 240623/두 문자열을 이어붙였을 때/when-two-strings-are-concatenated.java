@@ -11,13 +11,14 @@ public class Main {
     String d=b+a;
 
     boolean satisfied=true;
-    for(int i=0;i<c.length();i++){
-        if(c.charAt(i)!=d.charAt(i))
-        satisfied=false;
-    }
+    for(int i=0;i<c.length();i++)
+    if(c.charAt(i)!=d.charAt(i))
+    satisfied=false;
+
     if(satisfied)
     System.out.print("true");
     else
     System.out.print("false");
+
     }
 }
