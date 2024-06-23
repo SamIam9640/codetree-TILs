@@ -13,14 +13,14 @@ public class Main {
         if(str.charAt(i)=='e'&&str.charAt(i+1)=='e')
         satisfied1=true;
         if(str.charAt(i)=='a'&&str.charAt(i+1)=='b')
-        satisfied2=false;
+        satisfied2=true;
     }
 
     if(satisfied1)
     System.out.print("Yes ");
     else
     System.out.print("No ");
-    
+
     if(satisfied2)
     System.out.print("Yes");
     else
