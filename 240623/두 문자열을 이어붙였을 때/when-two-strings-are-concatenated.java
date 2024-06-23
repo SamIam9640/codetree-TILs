@@ -10,10 +10,10 @@ public class Main {
     String c=a+b;
     String d=b+a;
 
-    boolean satisfied=false;
+    boolean satisfied=true;
     for(int i=0;i<c.length();i++){
-        if(c.charAt(i)==d.charAt(i))
-        satisfied=true;
+        if(c.charAt(i)!=d.charAt(i))
+        satisfied=false;
     }
 
     if(satisfied==true)
