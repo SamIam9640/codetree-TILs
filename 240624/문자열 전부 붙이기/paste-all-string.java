@@ -6,14 +6,14 @@ public class Main {
 
     int n=sc.nextInt();
 
-    String str;
-
+    String [] str=new String[10];
     for(int i=0;i<n;i++){
-        str=sc.next();
-        
-    
+    str[i]=sc.next();
+    System.out.print(str[i]);
     }
 
-System.out.print(str);
+    
+
+
     }
 }
