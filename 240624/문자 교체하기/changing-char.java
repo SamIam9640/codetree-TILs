@@ -7,13 +7,7 @@ public class Main {
     String str1=sc.next();
     String str2=sc.next();
 
-    char [] arr2=str2.toCharArray();
-
-    arr2[0]=str1.charAt(0);
-    arr2[1]=str1.charAt(1);
-
-    for(int i=0;i<str2.length();i++)
-    System.out.print(arr2[i]);
-    
+    str2=str1.substring(0,2)+str2.substring(2);
+    System.out.print(str2);
     }
 }
