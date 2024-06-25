@@ -9,11 +9,14 @@ public class Main {
     int cnt1=0;
     int cnt2=0;
 
-    if(str.contains("ee"))
-    cnt1++;
-    if(str.contains("eb"))
-    cnt2++;
+    for(int i=0;i<str.length()-1;i++){
+        if(str.charAt(i)=='e'&&str.charAt(i+1)=='e')
+        cnt1++;
+        if(str.charAt(i)=='e'&&str.charAt(i+1)=='b')
+        cnt2++;
+    }
 
     System.out.print(cnt1+" "+cnt2);
+
     }
 }
