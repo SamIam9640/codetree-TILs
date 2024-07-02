@@ -15,6 +15,8 @@ public class Main {
         a=len-1;
 
         s=s.substring(0,a)+s.substring(a+1);
+        len=s.length();
+        
 
         System.out.println(s);
     }
