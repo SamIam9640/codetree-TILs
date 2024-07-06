@@ -8,7 +8,7 @@ public class Main {
 
     int len=s.length();
 
-    s=s.substring(1,len)+s.substring(0,1);
+    s=s.substring(1)+s.substring(0,1);
 
     System.out.print(s);
 
