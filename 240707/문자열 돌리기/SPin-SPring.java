@@ -7,7 +7,6 @@ public class Main {
     String str=sc.next();
 
     int len=str.length();
-
     System.out.println(str);
 
     for(int i=0;i<len;i++){
@@ -15,7 +14,5 @@ public class Main {
 
         System.out.println(str);
     }
-
-
     }
 }
