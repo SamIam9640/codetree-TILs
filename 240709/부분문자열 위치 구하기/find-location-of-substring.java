@@ -12,6 +12,9 @@ public class Main {
 
     for(int i=0;i<Len1;i++){
 
+        if(i+Len2-1>=Len1)
+        continue;
+
         boolean isMatched=true;
         for(int j=0;j<Len2;j++){
             if(str1.charAt(i+j)!=str2.charAt(j))
